@@ -11,8 +11,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A package which configures an existing MVC application for globalization and localization</description>
     <tags>mvc globalization localization</tags>
-    <files>
-      <file src="..\src\Resources\**\*.resx" target="Resources" />
-  </files>
   </metadata>
+   <files>
+      <file src="..\src\Core\Resources\**\*.resx" target="Resources" />
+      <file src="..\src\Core\Resources\**\*.Designer.cs" target="Resources" />
+    </files>
 </package>
