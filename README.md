@@ -6,6 +6,7 @@ Provide a collection of packages to help developers get started building globali
 
 ### Getting started
 
+ * Read up on the [initial brainstorming](http://sync.in/ltlbzbgOQx) we did for ideas and features.
  * Fork the code on [GitHub](https://github.com/Code52/internationalization-mvc4) and have a play!
  * Introduce yourself in the [JabbR](http://jabbr.net/#/rooms/code52) room!
  * Grab a task from the [Trello](https://trello.com/board/internationalization-mvc4/4f49efbbd105c95e0c12332e) board and get involved!
