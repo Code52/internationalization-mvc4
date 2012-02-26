@@ -13,7 +13,6 @@
     <tags>mvc globalization localization</tags>
   </metadata>
    <files>
-      <file src="..\src\Core\Resources\**\*.resx" target="Resources" />
-      <file src="..\src\Core\Resources\**\*.Designer.cs" target="Resources" />
+      <file src="..\src\Core\content\**\*.*" target="content" />
     </files>
 </package>
