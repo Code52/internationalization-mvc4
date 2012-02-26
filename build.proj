@@ -1,0 +1,8 @@
+<Project ToolsVersion="4.0" DefaultTargets="Compile" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Target Name="Compile">
+    <Message Text=" ===========Compiling code===========" Importance="High" />
+    <MSBuild Projects="./src/DemoApplication/DemoApplication.sln" Properties="Configuration=$(Configuration)" />
+  </Target>
+
+</Project>
