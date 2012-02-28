@@ -92,6 +92,9 @@
         <script type="text/javascript" src="@String.Format("http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_{0}.js", CultureHelper.GetCurrentNeutralCulture())"></script>
     }
     <script type="text/javascript" src="@Url.Content("/Scripts/Code52.i18n.js")"></script>
+    <script type="text/javascript">
+        Code52.Language.Init('@CultureHelper.GetCurrentCulture()');
+	</script>
 @* ReSharper disable Html.PathError *@
     <script type="text/javascript" src="@Url.Content("/i18n/Code52.i18n.language.js")"></script>
 @* ReSharper restore Html.PathError *@

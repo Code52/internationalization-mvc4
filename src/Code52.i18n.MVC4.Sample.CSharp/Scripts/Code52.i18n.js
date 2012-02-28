@@ -53,4 +53,3 @@
         }
     };
 })(window);
-$(document).ready(window.Code52.Language.Init);
