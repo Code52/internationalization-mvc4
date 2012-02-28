@@ -1,0 +1,193 @@
+﻿
+
+#languageselection
+{
+}
+#languages
+{
+	margin-top: 5px;
+	display: none;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 40px;
+	background-color: #efefef;
+}
+#languages h4
+{
+	letter-spacing: normal;
+	font-family: "Segoe UI" ,Candara, "Bitstream Vera Sans" , "DejaVu Sans" , "Bitstream Vera Sans" , "Trebuchet MS" ,Verdana, "Verdana Ref" ,sans serif;
+	font-size: 11px;
+	text-transform: capitalize;
+	font-weight: bold;
+	color: #606060;
+	margin-top: -7px;
+}
+#languages UL
+{
+	margin-left: -40px;
+	list-style: none;
+	display: block;
+	padding-top: 5px;
+}
+#languages LI
+{
+	float: left;
+	border-right: 1px dotted #cecece;
+	padding-right: 5px;
+	margin-right: 5px;
+	margin-top: -16px;
+}
+#languages LI:last-child
+{
+	border-right: none;
+}
+.language
+{
+	padding-bottom: 2px;
+	background-position: left;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	padding-left: 20px;
+	text-align: left;
+}
+#currentlanguageSelection
+{
+	margin-left: 15px;
+}
+.language A
+{
+	line-height: 10px;
+	font-family: "Segoe UI" ,Candara, "Bitstream Vera Sans" , "DejaVu Sans" , "Bitstream Vera Sans" , "Trebuchet MS" ,Verdana, "Verdana Ref" , "sans serif";
+	font-size: 12px;
+}
+
+#currentlanguage
+{
+	padding: 5px;
+}
+#currentlanguageSelection_icon
+{
+	float: left;
+	margin-top: 2px;
+}
+#i18n-options-container
+{
+	border-radius: 5px 5px 5px 5px;
+}
+#i18n-options a
+{
+}
+#i18n-options
+{
+	background: url("/content/code52.i18n/images/icon_international_map.png") no-repeat scroll right 0px transparent;
+	z-index: 1000;
+	padding-right: 55px;
+	width:65px;
+    text-align: right;
+}
+#i18n-options span
+{
+}
+
+#i18n-regions
+{
+	background: url("/content/code52.i18n/images/worldheader.png") no-repeat scroll 0 0 transparent;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	width: 900px;
+	display: none;
+}
+#i18n-regions h4
+{
+	height: 25px;
+	left: 190px;
+	position: absolute;
+	top: 15px;
+	width: 160px;
+}
+#i18n-regions ul
+{
+	left: 400px;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+}
+#i18n-regions li
+{
+	background: none repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+	float: left;
+	font-size: 12px;
+	font-weight: normal;
+	list-style: none outside none;
+	margin: 18px 2.5em 0 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+#i18n-regions ol
+{
+	display: block;
+	list-style: square inside none;
+	margin: 0;
+	padding: 0;
+}
+#i18n-regions li.lang
+{
+	background: none repeat scroll 0 0 transparent;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 15px;
+	list-style: none outside none;
+	margin: 0 5px 0 0;
+	padding: 0;
+	text-transform: none;
+	white-space: nowrap;
+}
+#i18n-regions li.lang a
+{
+	color: white;
+}
+#placeholder-regions
+{
+	background: url("/content/code52.i18n/images/bg_regions_international_tile.png") repeat-x scroll 0 0 transparent;
+}
+.language
+{
+	background-position: left 7px;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	padding-left: 20px;
+	text-align: left;
+}
+#currentlanguageSelection
+{
+	margin-left: 15px;
+}
+.language A
+{
+	line-height: 10px;
+}
+.language_EN
+{
+	background-image: url(/content/code52.i18n/images/flags/gb.png);
+}
+.language_IT
+{
+	background-image: url(/content/code52.i18n/images/flags/it.png);
+}
+.language_FR
+{
+	background-image: url(/content/code52.i18n/images/flags/fr.png);
+}
+.language_ES
+{
+	background-image: url(/content/code52.i18n/images/flags/es.png);
+}
+.language_DE
+{
+	background-image: url(/content/code52.i18n/images/flags/de.png);
+}

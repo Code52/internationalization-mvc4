@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project>
+  <configuration createBackupFiles="False" hideEmptyRows="False" hideTranslatedRows="False" useSpellChecker="True" neutralLanguageCode="en-gb" languagesToDisplay="">
+    <globalSetting name="Filter-ResourceEditorGrid">&lt;XtraSerializer version="1.0" application="View"&gt;
+  &lt;property name="#LayoutVersion" /&gt;
+  &lt;property name="ActiveFilterString" /&gt;
+&lt;/XtraSerializer&gt;</globalSetting>
+    <globalSetting name="Sort-ResourceEditorGrid">&lt;XtraSerializer version="1.0" application="View"&gt;
+  &lt;property name="#LayoutVersion" /&gt;
+&lt;/XtraSerializer&gt;</globalSetting>
+    <globalSetting name="CreateNewFilesForm.prefixTextBox.Text">####</globalSetting>
+    <globalSetting name="CreateNewFilesForm.prefixCheckBox.Checked">False</globalSetting>
+    <globalSetting name="CreateNewFilesForm.referenceLanguageComboBox.SelectedIndex">-1</globalSetting>
+    <globalSetting name="CreateNewFilesForm.destinationLanguagesListBox">
+    </globalSetting>
+    <globalSetting name="CreateNewFilesForm.copyTextsCheckBox.Checked">False</globalSetting>
+    <globalSetting name="CreateNewFilesForm.automaticallyTranslateCheckBox.Checked">False</globalSetting>
+    <globalSetting name="ReadOnlyFileOverwriteBehaviour">0</globalSetting>
+    <globalSetting name="OmitEmptyItems">True</globalSetting>
+    <globalSetting name="ShowCommentsColumnInGrid">False</globalSetting>
+    <globalSetting name="IgnoreWindowsFormsResourcesWithDesignerFiles">True</globalSetting>
+    <globalSetting name="HideInternalDesignerRows">True</globalSetting>
+    <globalSetting name="UseShallowGridDataCumulation">True</globalSetting>
+    <globalSetting name="HideFileGroupFilesInTree">True</globalSetting>
+    <globalSetting name="NeutralLanguageFileNamePattern">[basename][optionaldefaulttypes].[extension]</globalSetting>
+    <globalSetting name="NonNeutralLanguageFileNamePattern">[basename][optionaldefaulttypes].[languagecode].[extension]</globalSetting>
+    <globalSetting name="BaseNameDotCount">0</globalSetting>
+    <globalSetting name="DefaultFileTypesToIgnore">.aspx;.ascx;.asmx;.master;.sitemap</globalSetting>
+    <globalSetting name="Project-PersistGridSettings">True</globalSetting>
+    <globalSetting name="ColorifyNullCells">True</globalSetting>
+    <globalSetting name="EnableExcelExportSnapshots">True</globalSetting>
+    <globalSetting name="CreateNewFileForm.prefixTextBox.Text">####</globalSetting>
+    <globalSetting name="CreateNewFileForm.prefixCheckBox.Checked">False</globalSetting>
+    <globalSetting name="CreateNewFileForm.referenceLanguageComboBox.SelectedIndex">0</globalSetting>
+    <globalSetting name="CreateNewFileForm.newLanguageComboBox.SelectedIndex">180</globalSetting>
+    <globalSetting name="CreateNewFileForm.copyTextsCheckBox.Checked">True</globalSetting>
+    <globalSetting name="CreateNewFileForm.automaticallyTranslateCheckBox.Checked">False</globalSetting>
+    <globalSetting name="projectMruItems">&lt;?xml version='1.0' encoding='utf-8'?&gt;&lt;items&gt;&lt;item type="0" checksum="1495344443" /&gt;&lt;item type="2" checksum="4824944858" /&gt;&lt;/items&gt;</globalSetting>
+    <userSetting name="david.christiansen@NETIDME.filesInitialDir">C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources</userSetting>
+    <userSetting name="david.christiansen@NETIDME.FindText">
+    </userSetting>
+    <userSetting name="david.christiansen@NETIDME.RecentFiles">C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.resx;C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.en-US.resx;C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.fr.resx;C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.pl.resx###***###C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.resx;C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.en-US.resx;C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.fr.resx;C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.pl.resx###***###C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.resx;C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.en-US.resx;C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.fr.resx;C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.pl.resx</userSetting>
+    <description>
+    </description>
+  </configuration>
+  <fileGroups>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="Code52.i18n.MVC4.Sample.CSharp\Resources\Language.resx" absoluteFilePath="C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="Code52.i18n.MVC4.Sample.CSharp\Resources\Language.en-US.resx" absoluteFilePath="C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.en-US.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="Code52.i18n.MVC4.Sample.CSharp\Resources\Language.fr.resx" absoluteFilePath="C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.fr.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="Code52.i18n.MVC4.Sample.CSharp\Resources\Language.pl.resx" absoluteFilePath="C:\Projects\internationalization-mvc4\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.pl.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+  </fileGroups>
+  <projectFolders />
+</project>
