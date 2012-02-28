@@ -186,7 +186,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery.cookie.js" />
-    <Content Include="Scripts\jquery.globalise.js" />
     <Content Include="Scripts\Code52.i18n.js" />
     <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />
