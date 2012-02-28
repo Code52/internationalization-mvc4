@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Globalization;
-using System.Web.Mvc;
-using System.Web.Security;
-
-namespace Code52.i18n.MVC4.Sample.CSharp.Models {
+﻿namespace Code52.i18n.MVCFour.Sample.CSharp.Models {
+    using System.ComponentModel.DataAnnotations;
+    using System.Web.Mvc;
 
     public class ChangePasswordModel {
         [Required]

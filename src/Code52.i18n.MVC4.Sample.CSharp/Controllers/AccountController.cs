@@ -1,22 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using System.Web.Security;
-using Code52.i18n.MVC4.Sample.CSharp.Models;
+﻿namespace Code52.i18n.MVCFour.Sample.CSharp.Controllers {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web.Mvc;
+    using System.Web.Security;
 
-namespace Code52.i18n.MVC4.Sample.CSharp.Controllers {
+    using Code52.i18n.MVCFour.Sample.CSharp.Models;
 
     [Authorize]
-    public class AccountController : Controller {
+    public class AccountController : BaseController {
 
         //
         // GET: /Account/Login
 
         [AllowAnonymous]
         public ActionResult Login() {
-            return ContextDependentView();
+            return this.ContextDependentView();
         }
 
         //
@@ -25,17 +24,17 @@ namespace Code52.i18n.MVC4.Sample.CSharp.Controllers {
         [AllowAnonymous]
         [HttpPost]
         public JsonResult JsonLogin(LoginModel model, string returnUrl) {
-            if (ModelState.IsValid) {
+            if (this.ModelState.IsValid) {
                 if (Membership.ValidateUser(model.UserName, model.Password)) {
                     FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
-                    return Json(new { success = true, redirect = returnUrl });
+                    return this.Json(new { success = true, redirect = returnUrl });
                 } else {
-                    ModelState.AddModelError("", "The user name or password provided is incorrect.");
+                    this.ModelState.AddModelError("", "The user name or password provided is incorrect.");
                 }
             }
 
             // If we got this far, something failed
-            return Json(new { errors = GetErrorsFromModelState() });
+            return this.Json(new { errors = this.GetErrorsFromModelState() });
         }
 
         //
@@ -44,21 +43,21 @@ namespace Code52.i18n.MVC4.Sample.CSharp.Controllers {
         [AllowAnonymous]
         [HttpPost]
         public ActionResult Login(LoginModel model, string returnUrl) {
-            if (ModelState.IsValid) {
+            if (this.ModelState.IsValid) {
                 if (Membership.ValidateUser(model.UserName, model.Password)) {
                     FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
-                    if (Url.IsLocalUrl(returnUrl)) {
-                        return Redirect(returnUrl);
+                    if (this.Url.IsLocalUrl(returnUrl)) {
+                        return this.Redirect(returnUrl);
                     } else {
-                        return RedirectToAction("Index", "Home");
+                        return this.RedirectToAction("Index", "Home");
                     }
                 } else {
-                    ModelState.AddModelError("", "The user name or password provided is incorrect.");
+                    this.ModelState.AddModelError("", "The user name or password provided is incorrect.");
                 }
             }
 
             // If we got this far, something failed, redisplay form
-            return View(model);
+            return this.View(model);
         }
 
         //
@@ -67,7 +66,7 @@ namespace Code52.i18n.MVC4.Sample.CSharp.Controllers {
         public ActionResult LogOff() {
             FormsAuthentication.SignOut();
 
-            return RedirectToAction("Index", "Home");
+            return this.RedirectToAction("Index", "Home");
         }
 
         //
@@ -75,7 +74,7 @@ namespace Code52.i18n.MVC4.Sample.CSharp.Controllers {
 
         [AllowAnonymous]
         public ActionResult Register() {
-            return ContextDependentView();
+            return this.ContextDependentView();
         }
 
         //
@@ -84,21 +83,21 @@ namespace Code52.i18n.MVC4.Sample.CSharp.Controllers {
         [AllowAnonymous]
         [HttpPost]
         public ActionResult JsonRegister(RegisterModel model) {
-            if (ModelState.IsValid) {
+            if (this.ModelState.IsValid) {
                 // Attempt to register the user
                 MembershipCreateStatus createStatus;
                 Membership.CreateUser(model.UserName, model.Password, model.Email, passwordQuestion: null, passwordAnswer: null, isApproved: true, providerUserKey: null, status: out createStatus);
 
                 if (createStatus == MembershipCreateStatus.Success) {
                     FormsAuthentication.SetAuthCookie(model.UserName, createPersistentCookie: false);
-                    return Json(new { success = true });
+                    return this.Json(new { success = true });
                 } else {
-                    ModelState.AddModelError("", ErrorCodeToString(createStatus));
+                    this.ModelState.AddModelError("", ErrorCodeToString(createStatus));
                 }
             }
 
             // If we got this far, something failed
-            return Json(new { errors = GetErrorsFromModelState() });
+            return this.Json(new { errors = this.GetErrorsFromModelState() });
         }
 
         //
@@ -107,28 +106,28 @@ namespace Code52.i18n.MVC4.Sample.CSharp.Controllers {
         [AllowAnonymous]
         [HttpPost]
         public ActionResult Register(RegisterModel model) {
-            if (ModelState.IsValid) {
+            if (this.ModelState.IsValid) {
                 // Attempt to register the user
                 MembershipCreateStatus createStatus;
                 Membership.CreateUser(model.UserName, model.Password, model.Email, passwordQuestion: null, passwordAnswer: null, isApproved: true, providerUserKey: null, status: out createStatus);
 
                 if (createStatus == MembershipCreateStatus.Success) {
                     FormsAuthentication.SetAuthCookie(model.UserName, createPersistentCookie: false);
-                    return RedirectToAction("Index", "Home");
+                    return this.RedirectToAction("Index", "Home");
                 } else {
-                    ModelState.AddModelError("", ErrorCodeToString(createStatus));
+                    this.ModelState.AddModelError("", ErrorCodeToString(createStatus));
                 }
             }
 
             // If we got this far, something failed, redisplay form
-            return View(model);
+            return this.View(model);
         }
 
         //
         // GET: /Account/ChangePassword
 
         public ActionResult ChangePassword() {
-            return View();
+            return this.View();
         }
 
         //
@@ -136,49 +135,49 @@ namespace Code52.i18n.MVC4.Sample.CSharp.Controllers {
 
         [HttpPost]
         public ActionResult ChangePassword(ChangePasswordModel model) {
-            if (ModelState.IsValid) {
+            if (this.ModelState.IsValid) {
 
                 // ChangePassword will throw an exception rather
                 // than return false in certain failure scenarios.
                 bool changePasswordSucceeded;
                 try {
-                    MembershipUser currentUser = Membership.GetUser(User.Identity.Name, userIsOnline: true);
+                    MembershipUser currentUser = Membership.GetUser(this.User.Identity.Name, userIsOnline: true);
                     changePasswordSucceeded = currentUser.ChangePassword(model.OldPassword, model.NewPassword);
                 } catch (Exception) {
                     changePasswordSucceeded = false;
                 }
 
                 if (changePasswordSucceeded) {
-                    return RedirectToAction("ChangePasswordSuccess");
+                    return this.RedirectToAction("ChangePasswordSuccess");
                 } else {
-                    ModelState.AddModelError("", "The current password is incorrect or the new password is invalid.");
+                    this.ModelState.AddModelError("", "The current password is incorrect or the new password is invalid.");
                 }
             }
 
             // If we got this far, something failed, redisplay form
-            return View(model);
+            return this.View(model);
         }
 
         //
         // GET: /Account/ChangePasswordSuccess
 
         public ActionResult ChangePasswordSuccess() {
-            return View();
+            return this.View();
         }
 
         private ActionResult ContextDependentView() {
-            string actionName = ControllerContext.RouteData.GetRequiredString("action");
-            if (Request.QueryString["content"] != null) {
-                ViewBag.FormAction = "Json" + actionName;
-                return PartialView();
+            string actionName = this.ControllerContext.RouteData.GetRequiredString("action");
+            if (this.Request.QueryString["content"] != null) {
+                this.ViewBag.FormAction = "Json" + actionName;
+                return this.PartialView();
             } else {
-                ViewBag.FormAction = actionName;
-                return View();
+                this.ViewBag.FormAction = actionName;
+                return this.View();
             }
         }
 
         private IEnumerable<string> GetErrorsFromModelState() {
-            return ModelState.SelectMany(x => x.Value.Errors.Select(error => error.ErrorMessage));
+            return this.ModelState.SelectMany(x => x.Value.Errors.Select(error => error.ErrorMessage));
         }
 
         #region Status Codes

@@ -1,27 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿namespace Code52.i18n.MVCFour.Sample.CSharp.Controllers {
+    using System.Web.Mvc;
 
-namespace Code52.i18n.MVC4.Sample.CSharp.Controllers {
-    public class HomeController : Controller {
+    public class HomeController : BaseController {
         public ActionResult Index() {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+            this.ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
-            return View();
+            return this.View();
         }
 
         public ActionResult About() {
-            ViewBag.Message = "Your quintessential app description page.";
+            this.ViewBag.Message = "Your quintessential app description page.";
 
-            return View();
+            return this.View();
         }
 
         public ActionResult Contact() {
-            ViewBag.Message = "Your quintessential contact page.";
+            this.ViewBag.Message = "Your quintessential contact page.";
 
-            return View();
+            return this.View();
         }
     }
 }
