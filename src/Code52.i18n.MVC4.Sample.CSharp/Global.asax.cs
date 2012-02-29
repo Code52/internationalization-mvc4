@@ -3,19 +3,25 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Code52.i18n.MVCFour.Sample.CSharp.Resources;
+using Code52.i18n.MVCFour.Sample.CSharp.Code52Code;
+using ModelMetadataExtensions;
 
-namespace Code52.i18n.MVCFour.Sample.CSharp {
-    using Code52.i18n.MVCFour.Sample.CSharp.Code52Code;
+namespace Code52.i18n.MVCFour.Sample.CSharp
+{
 
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
 
-    public class MvcApplication : System.Web.HttpApplication {
-        public static void RegisterGlobalFilters(GlobalFilterCollection filters) {
+    public class MvcApplication : System.Web.HttpApplication
+    {
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+        {
             filters.Add(new HandleErrorAttribute());
         }
 
-        public static void RegisterRoutes(RouteCollection routes) {
+        public static void RegisterRoutes(RouteCollection routes)
+        {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapRoute("Language", "i18n/Code52.i18n.language.js", new { controller = "Language", action = "Language" });
             routes.MapHttpRoute(
@@ -30,8 +36,11 @@ namespace Code52.i18n.MVCFour.Sample.CSharp {
             );
         }
 
-        protected void Application_Start() {
+        protected void Application_Start()
+        {
             AreaRegistration.RegisterAllAreas();
+
+            ModelMetadataProviders.Current = new ConventionalModelMetadataProvider(false, typeof(Language));
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
@@ -40,10 +49,11 @@ namespace Code52.i18n.MVCFour.Sample.CSharp {
 
         }
 
-        public override string GetVaryByCustomString(HttpContext context, string arg) {
+        public override string GetVaryByCustomString(HttpContext context, string arg)
+        {
             // It seems this executes multiple times and early, so we need to extract language again from cookie.
             if (arg == "culture") // culture name (e.g. "en-US") is what should vary caching
-			{
+            {
                 string cultureName = null;
                 // Attempt to read the culture cookie from Request
                 HttpCookie cultureCookie = this.Request.Cookies["_culture"];

@@ -117,8 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ChangePasswordModel_ConfirmPassword" xml:space="preserve">
+    <value>[Cőŉƒįřm ŉęŵ päşşŵőřđ !!! !!!]</value>
+  </data>
+  <data name="ChangePasswordModel_ConfirmPassword_Compare" xml:space="preserve">
+    <value>[Ŧĥę ŉęŵ päşşŵőřđ äŉđ čőŉƒįřmäŧįőŉ päşşŵőřđ đő ŉőŧ mäŧčĥ. !!! !!! !!!]</value>
+  </data>
+  <data name="ChangePasswordModel_NewPassword" xml:space="preserve">
+    <value>[Ńęŵ päşşŵőřđ !!! !!!]</value>
+  </data>
+  <data name="ChangePasswordModel_NewPassword_StringLength" xml:space="preserve">
+    <value>[Ŧĥę {0} mūşŧ þę äŧ ľęäşŧ {2} čĥäřäčŧęřş ľőŉģ. !!! !!!]</value>
+  </data>
+  <data name="ChangePasswordModel_OldPassword" xml:space="preserve">
+    <value>[Cūřřęŉŧ päşşŵőřđ !!! !!!]</value>
+  </data>
   <data name="Demonstration_Alert" xml:space="preserve">
     <value>[Ŧĥįş ŧęχŧ čämę ƒřőm ŧĥę řęşőūřčę ƒįľę. ĥőŵ čőőľ įş ŧĥäŧ. !!! !!! !!!]</value>
+  </data>
+  <data name="LoginModel_Password" xml:space="preserve">
+    <value>[Päşşŵőřđ !!! !!! !!! !!! !!! !!! !!!]</value>
+  </data>
+  <data name="LoginModel_RememberMe" xml:space="preserve">
+    <value>[Ŗęmęmþęř mę? !!! !!!]</value>
+  </data>
+  <data name="LoginModel_UserName" xml:space="preserve">
+    <value>[Ůşęř ŉämę ƒőő þäř þäž !!! !!!]</value>
   </data>
   <data name="Logo_Title" xml:space="preserve">
     <value>[Cőđę52 į18ŉ Đęmő şįŧę !!! !!!]</value>
@@ -134,6 +158,21 @@
   </data>
   <data name="Menu_Home" xml:space="preserve">
     <value>[Ħőmę !!! !!! !!!]</value>
+  </data>
+  <data name="RegisterModel_ConfirmPassword" xml:space="preserve">
+    <value>[Cőŉƒįřm ŉęŵ päşşŵőřđ !!! !!!]</value>
+  </data>
+  <data name="RegisterModel_ConfirmPassword_Compare" xml:space="preserve">
+    <value>[Ŧĥę ŉęŵ päşşŵőřđ äŉđ čőŉƒįřmäŧįőŉ päşşŵőřđ đő ŉőŧ mäŧčĥ. !!! !!! !!!]</value>
+  </data>
+  <data name="RegisterModel_Password" xml:space="preserve">
+    <value>[Päşşŵőřđ !!! !!! !!! !!! !!! !!! !!!]</value>
+  </data>
+  <data name="RegisterModel_Password_StringLength" xml:space="preserve">
+    <value>[Ŧĥę {0} mūşŧ þę äŧ ľęäşŧ {2} čĥäřäčŧęřş ľőŉģ. !!! !!!]</value>
+  </data>
+  <data name="RegisterModel_UserName" xml:space="preserve">
+    <value>[Ůşęř ŉämę ƒőő !!! !!!]</value>
   </data>
   <data name="Social_Facebook" xml:space="preserve">
     <value>[Fäčęþőőĸ !!! !!! !!! !!! !!! !!! !!!]</value>
