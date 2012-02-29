@@ -15,20 +15,24 @@
         private static readonly ConcurrentDictionary<string, string> _getImplementedCultureCache = new ConcurrentDictionary<string, string>();
 
         public static string GetImplementedCulture(string name) {
-            if (string.IsNullOrEmpty(name))
-                return GetDefaultCulture(); // return Default culture
-            if (_getImplementedCultureCache.ContainsKey(name))
-                return _getImplementedCultureCache[name];   // we have worked this out before and cached the result. Send it back.
-            if (_validCultures.Count(c => c.Equals(name, StringComparison.InvariantCultureIgnoreCase)) == 0)
-                return CacheCulture(name, GetDefaultCulture()); // return Default culture if it is invalid
-            if (_cultures.Count(c => c.Equals(name, StringComparison.InvariantCultureIgnoreCase)) > 0)
-                return CacheCulture(name, name); // accept it
-            var n = GetNeutralCulture(name);
-            foreach (var c in _cultures)
-                if (c.StartsWith(n))
-                    return CacheCulture(name, c);
-            return CacheCulture(name, GetDefaultCulture()); // return Default culture as no match found
-        }
+#if DEBUG
+          return CacheCulture(name, "pl");
+#else
+          if (string.IsNullOrEmpty(name))
+            return GetDefaultCulture(); // return Default culture
+          if (_getImplementedCultureCache.ContainsKey(name))
+            return _getImplementedCultureCache[name];   // we have worked this out before and cached the result. Send it back.
+          if (_validCultures.Count(c => c.Equals(name, StringComparison.InvariantCultureIgnoreCase)) == 0)
+            return CacheCulture(name, GetDefaultCulture()); // return Default culture if it is invalid
+          if (_cultures.Count(c => c.Equals(name, StringComparison.InvariantCultureIgnoreCase)) > 0)
+            return CacheCulture(name, name); // accept it
+          var n = GetNeutralCulture(name);
+          foreach (var c in _cultures)
+            if (c.StartsWith(n))
+              return CacheCulture(name, c);
+          return CacheCulture(name, GetDefaultCulture()); // return Default culture as no match found
+#endif
+                                                                }
 
         private static string CacheCulture(string originalName, string implementedName)
         {
