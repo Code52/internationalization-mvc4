@@ -35,20 +35,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Code52.i18n\Code52.i18n.csproj">
-      <Project>{1EEDE5F6-7113-497F-A39F-B987C0041C5C}</Project>
-      <Name>Code52.i18n</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -62,7 +52,7 @@
     <Content Include="NuSpec\Content\Content\images\WorldHeader.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NuSpec\Code52.i18n.MVC3.Web.nuspec" />
+    <None Include="NuSpec\Code52.i18n.Web.nuspec" />
     <None Include="NuSpec\Content\Views\Account\ChangePassword.cshtml.pp" />
     <None Include="NuSpec\Content\Views\Account\ChangePasswordSuccess.cshtml" />
     <None Include="NuSpec\Content\Views\Account\Login.cshtml.pp" />

@@ -23,9 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.MVC3.All", "Cod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.MVC3.Logic", "Code52.i18n.MVC3.Logic\Code52.i18n.MVC3.Logic.csproj", "{AB508CF3-5988-4275-B29F-3E192836F166}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.MVC3.Web", "Code52.i18n.MVC3.Web\Code52.i18n.MVC3.Web.csproj", "{273BA0A3-5BF6-460F-AE8C-5354ACCC369F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.MVC4.Web", "Code52.i18n.MVC4.Web\Code52.i18n.MVC4.Web.csproj", "{E2B91985-9D5F-4CB6-8F5A-BA2B4E7A8244}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.Web", "Code52.i18n.MVC3.Web\Code52.i18n.Web.csproj", "{273BA0A3-5BF6-460F-AE8C-5354ACCC369F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,10 +63,6 @@ Global
 		{273BA0A3-5BF6-460F-AE8C-5354ACCC369F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{273BA0A3-5BF6-460F-AE8C-5354ACCC369F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{273BA0A3-5BF6-460F-AE8C-5354ACCC369F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2B91985-9D5F-4CB6-8F5A-BA2B4E7A8244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2B91985-9D5F-4CB6-8F5A-BA2B4E7A8244}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2B91985-9D5F-4CB6-8F5A-BA2B4E7A8244}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2B91985-9D5F-4CB6-8F5A-BA2B4E7A8244}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
