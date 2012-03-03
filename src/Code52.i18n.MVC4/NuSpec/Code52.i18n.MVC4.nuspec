@@ -4,7 +4,7 @@
     <metadata>
         <id>Code52.i18n.MVC4</id>
         <version>0.1</version>
-        <title>Internationalization Packages for ASP.NET MVC 4</title>
+        <title>[Code52] ASP.NET Internationalized Template for MVC4</title>
         <authors>bforster, dchristiansen</authors>
         <owners>bforster, dchristiansen</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>

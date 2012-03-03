@@ -1,4 +1,4 @@
-namespace Code52.i18n.MVCFour.Sample.CSharp.Controllers
+﻿namespace $rootnamespace$.Controllers 
 {
     using System;
     using System.Collections;
@@ -9,9 +9,9 @@ namespace Code52.i18n.MVCFour.Sample.CSharp.Controllers
     using System.Web.Mvc;
 
     [OutputCache(Duration = 60, VaryByCustom = "culture")]
-    public class LanguageController : BaseController
-    {
-        public RedirectResult Change(string customer, string token, string language)
+    public class LanguageController : Controller 
+	{
+		public RedirectResult Change(string customer, string token, string language)
         {
             if (string.IsNullOrWhiteSpace(language))
                 Response.Redirect("/", true);

@@ -1,4 +1,4 @@
-﻿namespace Code52.i18n.MVCFour.Sample.CSharp.Controllers
+﻿namespace $rootnamespace$.Controllers
 {
     using System.Web.Mvc;
 

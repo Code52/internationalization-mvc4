@@ -5,12 +5,11 @@ namespace $rootnamespace$.Controllers
     using System.Web;
     using System.Web.Mvc;
     using System.Web.Routing;
+    using $rootnamespace$.Code;
 
-    using Code52Code;
-
-    public abstract class BaseController : Controller {
-
-        protected override IAsyncResult BeginExecute(RequestContext requestContext, AsyncCallback callback, object state)
+    public abstract class BaseController : Controller 
+    {
+        protected override void Execute(RequestContext requestContext)
         {
             var request = requestContext.HttpContext.Request;
             string cultureName = null;
@@ -21,7 +20,7 @@ namespace $rootnamespace$.Controllers
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(cultureName);
             Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentCulture;
 
-            return base.BeginExecute(requestContext, callback, state);
+            base.Execute(requestContext);
         }
     }
 }
