@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <!-- Values in dollar $igns are automatically pulled from the AssemblyInfo.cs attributes by NuGet.exe -->
   <metadata>
-    <id>Code52.i18n.MVC3</id>
+    <id>Code52.i18n.MVC3.Logic</id>
     <version>0.1</version>
     <title>[Code52] ASP.NET Internationalized Template for MVC3</title>
     <authors>bforster, dchristiansen</authors>
@@ -15,8 +15,6 @@
     <dependencies>
       <dependency id="Code52.i18n" version="0.1" />
       <dependency id="AntiXSS" version="4.2.1" />
-      <dependency id="ModelMetadataExtensionsWithBugfix" version="0.1.2" />
-      <dependency id="WebActivator" version="1.5" />
     </dependencies>
     <releaseNotes>Initial release</releaseNotes>
   </metadata>

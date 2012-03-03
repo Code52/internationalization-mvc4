@@ -77,7 +77,6 @@
     <None Include="NuSpec\Code52.i18n.MVC4.Logic.nuspec">
       <SubType>Designer</SubType>
     </None>
-    <None Include="NuSpec\Content\App_Start\ModelMetadataProvider.cs.pp" />
     <None Include="NuSpec\Content\Controllers\LanguageController.cs.pp" />
     <None Include="NuSpec\Content\Controllers\AccountController.cs.pp" />
     <None Include="NuSpec\Content\Controllers\BaseController.cs.pp" />
@@ -89,9 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="NuSpec\Content\App_Readme\Code52.i18n.MVC4.readme.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
