@@ -13,7 +13,6 @@
         <summary></summary>
         <tags>localization globalization ASP.NET Web</tags>
         <dependencies>
-            <dependency id="jquery-globalize" version="[0.1.0]" />
             <dependency id="AntiXSS" version="4.2.1" />
         </dependencies>
         <releaseNotes>Initial release</releaseNotes>

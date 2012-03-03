@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <!-- Values in dollar $igns are automatically pulled from the AssemblyInfo.cs attributes by NuGet.exe -->
   <metadata>
-    <id>Code52.i18n.MVC3.Views</id>
+    <id>Code52.i18n.MVC3.Web</id>
     <version>0.1</version>
     <title>[Code52] i18n Template for MVC3 (Web)</title>
     <authors>bforster, dchristiansen</authors>

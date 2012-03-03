@@ -13,9 +13,9 @@
     <summary></summary>
     <tags>localization globalization MVC MVC4 ASP.NET Web</tags>
     <dependencies>
-      <dependency id="Code52.i18n" version="0.1" />
       <dependency id="Code52.i18n.MVC4.Logic" version="0.1" />
       <dependency id="Code52.i18n.MVC4.Web" version="0.1" />
+      <dependency id="jquery-globalize" version="[0.1.0]" />
       <dependency id="ModelMetadataExtensionsWithBugfix" version="0.1.2" />
       <dependency id="WebActivator" version="1.5" />
     </dependencies>
