@@ -4,7 +4,7 @@
     <metadata>
         <id>Code52.i18n</id>
         <version>0.1</version>
-        <title>Internationalization Packages for ASP.NET</title>
+        <title>[Code52] Internationalized Core for ASP.NET</title>
         <authors>bforster, dchristiansen</authors>
         <owners>bforster, dchristiansen</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Code52.i18n.MVCFour.Sample.CSharp.Resources {
+namespace $rootnamespace$.Resources {
     using System;
     
     

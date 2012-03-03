@@ -13,7 +13,8 @@
         <summary></summary>
         <tags>localization globalization MVC MVC4 ASP.NET Web</tags>
         <dependencies>
-            <dependency id="Code52.i18n" version="[0.1]" />
+            <dependency id="Code52.i18n" version="0.1" />
+            <dependency id="AntiXSS" version="4.2.1" />
         </dependencies>
         <releaseNotes>Initial release</releaseNotes>
     </metadata>
