@@ -13,7 +13,7 @@
     <summary></summary>
     <tags>localization globalization MVC MVC4 ASP.NET Web</tags>
     <dependencies>
-        <dependency id="Code52.i18n.Web" />
+        <dependency id="Code52.i18n" />
         <dependency id="Code52.i18n.MVC4" />
         <dependency id="Code52.i18n.Web.MVC.Razor" />
     </dependencies>
