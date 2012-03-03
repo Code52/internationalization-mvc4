@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="About_Title" xml:space="preserve">
+    <value>[Ÿőūř qūįŉŧęşşęŉŧįäľ äpp đęşčřįpŧįőŉ päģę. !!! !!!]</value>
+  </data>
   <data name="ChangePasswordModel_ConfirmPassword" xml:space="preserve">
     <value>[Cőŉƒįřm ŉęŵ päşşŵőřđ !!! !!!]</value>
   </data>
@@ -132,8 +135,14 @@
   <data name="ChangePasswordModel_OldPassword" xml:space="preserve">
     <value>[Cūřřęŉŧ päşşŵőřđ !!! !!!]</value>
   </data>
+  <data name="Contact_Title" xml:space="preserve">
+    <value>[Ÿőūř qūįŉŧęşşęŉŧįäľ čőŉŧäčŧ päģę. !!! !!!]</value>
+  </data>
   <data name="Demonstration_Alert" xml:space="preserve">
     <value>[Ŧĥįş ŧęχŧ čämę ƒřőm ŧĥę řęşőūřčę ƒįľę. ĥőŵ čőőľ įş ŧĥäŧ. !!! !!! !!!]</value>
+  </data>
+  <data name="Index_Title" xml:space="preserve">
+    <value>[Mőđįƒy ŧĥįş ŧęmpľäŧę ŧő ĵūmp-şŧäřŧ yőūř ÅŜP.ŃĒŦ äppľįčäŧįőŉ !!! !!! !!!]</value>
   </data>
   <data name="LoginModel_Password" xml:space="preserve">
     <value>[Päşşŵőřđ !!! !!! !!! !!! !!! !!! !!!]</value>
@@ -172,7 +181,7 @@
     <value>[Ŧĥę {0} mūşŧ þę äŧ ľęäşŧ {2} čĥäřäčŧęřş ľőŉģ. !!! !!!]</value>
   </data>
   <data name="RegisterModel_UserName" xml:space="preserve">
-    <value>[Ůşęř ŉämę ƒőő !!! !!!]</value>
+    <value>[Ůşęř ŉämę !!! !!! !!! !!! !!! !!! !!! !!!]</value>
   </data>
   <data name="Social_Facebook" xml:space="preserve">
     <value>[Fäčęþőőĸ !!! !!! !!! !!! !!! !!! !!!]</value>

@@ -75,16 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="NuSpec\Content\Controllers\LanguageController.cs.pp" />
+    <None Include="NuSpec\Content\Controllers\AccountController.cs.pp" />
+    <None Include="NuSpec\Content\Controllers\BaseController.cs.pp" />
+    <None Include="NuSpec\Content\Controllers\HomeController.cs.pp" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Code52.i18n.MVC\Code52.i18n.MVC.csproj">
-      <Project>{EFA9A1CD-06FF-41EC-9B2B-BA5EE890D2A5}</Project>
-      <Name>Code52.i18n.MVC</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="NuSpec\tools\install.ps1" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
