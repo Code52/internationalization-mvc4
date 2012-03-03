@@ -8,8 +8,8 @@
     <ProjectGuid>{AB508CF3-5988-4275-B29F-3E192836F166}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Code52.i18n.MVC</RootNamespace>
-    <AssemblyName>Code52.i18n.MVC</AssemblyName>
+    <RootNamespace>Code52.i18n.MVC3</RootNamespace>
+    <AssemblyName>Code52.i18n.MVC3</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

@@ -44,8 +44,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="NuSpec\Content\App_Start\AppStart_Code52_i18n.cs.pp" />
     <None Include="NuSpec\Content\App_Start\ModelMetadataProvider.cs.pp" />
-    <None Include="NuSpec\Code52.i18n.MVC4.All.nuspec" />
+    <None Include="NuSpec\Code52.i18n.MVC4.Razor.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NuSpec\Code52.i18n.MVC4.ASPX.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
