@@ -11,24 +11,19 @@
         <MakeDir Directories="$(ArtifactDirectory)" Condition="!Exists($(ArtifactDirectory))"/>
     </Target>
 
-    <Target Name="Compile" DependsOnTargets="BuildTestResourceFile">
-        <Message Text=" ===========Compiling code===========" Importance="High" />
-        <CallTarget Targets="BuildTestResourceFile" Condition="'$(Configuration)'=='Debug'" />
-        <MSBuild Projects="./src/Code52.i18n.sln" Properties="Configuration=$(Configuration)" />
-    </Target>
-
-    <Target Name="NuGetPackage_Local" DependsOnTargets="Compile">
-        <Message Text=" ===========Preparing packages===========" Importance="High" />
-        <Exec Command="./src/.nuget/nuget.exe build/Code52.i18n.nuspec" />
-    </Target>
-
     <Target Name="BuildTestResourceFile" Condition="'$(Configuration)'=='Debug'" >
         <Message Text=" ===========Preparing language resource files===========" Importance="High" />
         <CreateItem Include='$(ProjectRoot)'>
             <Output ItemName='ProjectRootPath' TaskParameter='Include' />
         </CreateItem>
         <Message Text="Parsing Language.resx" Importance="High" />
-        <Exec Command="build\tools\PsuedoizerConsole.exe &quot;%(ProjectRootPath.FullPath)\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.resx&quot; &quot;%(ProjectRootPath.FullPath)\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.pl.resx&quot;" />
+        <Exec Command="build\PsuedoizerConsole.exe &quot;%(ProjectRootPath.FullPath)\src\Sample.CSharp\Resources\Language.resx&quot; &quot;%(ProjectRootPath.FullPath)\src\Sample.CSharp\Resources\Language.pl.resx&quot;" />
+    </Target>
+
+    <Target Name="Compile" DependsOnTargets="BuildTestResourceFile">
+        <Message Text=" ===========Compiling code===========" Importance="High" />
+        <CallTarget Targets="BuildTestResourceFile" Condition="'$(Configuration)'=='Debug'" />
+        <MSBuild Projects="./src/Code52.i18n.sln" Properties="Configuration=$(Configuration)" />
     </Target>
 
 </Project>
