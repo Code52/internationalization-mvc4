@@ -13,7 +13,7 @@
     <summary></summary>
     <tags>localization globalization MVC MVC3 ASP.NET Web</tags>
     <dependencies>
-        <dependency id="Code52.i18n.MVC3" version="0.1" />
+        <dependency id="Code52.i18n.MVC" version="0.1" />
         <dependency id="Code52.i18n.Web.MVC.Razor" version="0.1" />
     </dependencies>
     <releaseNotes>Initial release</releaseNotes>
