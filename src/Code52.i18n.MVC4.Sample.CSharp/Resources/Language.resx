@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="About_Title" xml:space="preserve">
+    <value>Your quintessential app description page.</value>
+  </data>
   <data name="ChangePasswordModel_ConfirmPassword" xml:space="preserve">
     <value>Confirm new password</value>
   </data>
@@ -132,8 +135,14 @@
   <data name="ChangePasswordModel_OldPassword" xml:space="preserve">
     <value>Current password</value>
   </data>
+  <data name="Contact_Title" xml:space="preserve">
+    <value>Your quintessential contact page.</value>
+  </data>
   <data name="Demonstration_Alert" xml:space="preserve">
     <value>This text came from the resource file. how cool is that.</value>
+  </data>
+  <data name="Index_Title" xml:space="preserve">
+    <value>Modify this template to jump-start your ASP.NET application</value>
   </data>
   <data name="LoginModel_Password" xml:space="preserve">
     <value>Password</value>
@@ -176,7 +185,7 @@
     <value>The {0} must be at least {2} characters long.</value>
   </data>
   <data name="RegisterModel_UserName" xml:space="preserve">
-    <value>User name foo</value>
+    <value>User name</value>
   </data>
   <data name="Social_Facebook" xml:space="preserve">
     <value>Facebook</value>

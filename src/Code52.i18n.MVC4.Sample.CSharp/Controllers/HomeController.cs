@@ -6,23 +6,23 @@
     {
         public ActionResult Index()
         {
-            this.ViewBag.Message = "Modify this template to jump-start your ASP.NET application";
+            ViewBag.Message = Resources.Language.Index_Title;
 
-            return this.View();
+            return View();
         }
 
         public ActionResult About()
         {
-            this.ViewBag.Message = "Your quintessential app description page.";
+            ViewBag.Message = Resources.Language.About_Title;
 
-            return this.View();
+            return View();
         }
 
         public ActionResult Contact()
         {
-            this.ViewBag.Message = "Your quintessential contact page.";
+            ViewBag.Message = Resources.Language.Contact_Title;
 
-            return this.View();
+            return View();
         }
     }
 }

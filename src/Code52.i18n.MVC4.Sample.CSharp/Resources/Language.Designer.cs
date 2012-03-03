@@ -61,6 +61,15 @@ namespace Code52.i18n.MVCFour.Sample.CSharp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Your quintessential app description page..
+        /// </summary>
+        public static string About_Title {
+            get {
+                return ResourceManager.GetString("About_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confirm new password.
         /// </summary>
         public static string ChangePasswordModel_ConfirmPassword {
@@ -106,11 +115,29 @@ namespace Code52.i18n.MVCFour.Sample.CSharp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Your quintessential contact page..
+        /// </summary>
+        public static string Contact_Title {
+            get {
+                return ResourceManager.GetString("Contact_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This text came from the resource file. how cool is that..
         /// </summary>
         public static string Demonstration_Alert {
             get {
                 return ResourceManager.GetString("Demonstration_Alert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modify this template to jump-start your ASP.NET application.
+        /// </summary>
+        public static string Index_Title {
+            get {
+                return ResourceManager.GetString("Index_Title", resourceCulture);
             }
         }
         
@@ -223,7 +250,7 @@ namespace Code52.i18n.MVCFour.Sample.CSharp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to User name foo.
+        ///   Looks up a localized string similar to User name.
         /// </summary>
         public static string RegisterModel_UserName {
             get {

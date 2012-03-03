@@ -1,55 +1,63 @@
-namespace Code52.i18n.MVCFour.Sample.CSharp.Controllers {
+namespace Code52.i18n.MVCFour.Sample.CSharp.Controllers
+{
     using System;
     using System.Collections;
     using System.Globalization;
     using System.Resources;
     using System.Text;
     using System.Web;
-    using System.Web.Caching;
     using System.Web.Mvc;
 
     [OutputCache(Duration = 60, VaryByCustom = "culture")]
-    public class LanguageController : BaseController {
-        public RedirectResult Change(string customer, string token, string language) {
+    public class LanguageController : BaseController
+    {
+        public RedirectResult Change(string customer, string token, string language)
+        {
             if (string.IsNullOrWhiteSpace(language))
-                this.Response.Redirect("/", true);
-            if (!string.IsNullOrWhiteSpace(language)) {
-                switch (language.ToLower()) {
+                Response.Redirect("/", true);
+            if (!string.IsNullOrWhiteSpace(language))
+            {
+                switch (language.ToLower())
+                {
                     case "fr":
-                        this.SetCulture("fr");
+                        SetCulture("fr");
                         break;
                     case "pl":
-                        this.SetCulture("pl");
+                        SetCulture("pl");
                         break;
                     case "en-US":
-                        this.SetCulture("en-US");
+                        SetCulture("en-US");
                         break;
                     default:
-                        this.SetCulture("en-GB");
+                        SetCulture("en-GB");
                         break;
                 }
             }
             return new RedirectResult(string.Format("/{0}/{1}/verify", customer, token));
         }
-        protected void SetCulture(string name) {
-            HttpCookie cultureCookie = this.Request.Cookies["_culture"];
-            if (cultureCookie == null)
-                cultureCookie = new HttpCookie("_culture");
+
+        protected void SetCulture(string name)
+        {
+            var cultureCookie = Request.Cookies["_culture"] ?? new HttpCookie("_culture");
             cultureCookie.Value = name;
-            // The domain for the cookie should be set.
-            // cultureCookie.Domain = "example.com";
+            // NOTE: you should specify the domain for the cookie.
+            // cultureCookie.Domain = Request.Url.Host;
             cultureCookie.Expires = DateTime.Now.AddYears(1);
             cultureCookie.Path = "/";
-            this.Response.Cookies.Add(cultureCookie);
+            Response.Cookies.Add(cultureCookie);
         }
-        public JavaScriptResult Language() {
+
+        public JavaScriptResult Language()
+        {
             return GetResourceScript(Resources.Language.ResourceManager);
         }
 
-        JavaScriptResult GetResourceScript(ResourceManager resourceManager) {
-            string cacheName = string.Format("ResourceJavaScripter.{0}", CultureInfo.CurrentCulture.Name);
+        JavaScriptResult GetResourceScript(ResourceManager resourceManager)
+        {
+            var cacheName = string.Format("ResourceJavaScripter.{0}", CultureInfo.CurrentCulture.Name);
             var value = HttpRuntime.Cache.Get(cacheName) as JavaScriptResult;
-            if (value == null) {
+            if (value == null)
+            {
                 JavaScriptResult javaScriptResult = CreateResourceScript(resourceManager);
                 HttpContext.Cache.Insert(cacheName, javaScriptResult);
                 return javaScriptResult;
@@ -57,8 +65,9 @@ namespace Code52.i18n.MVCFour.Sample.CSharp.Controllers {
             return value;
         }
 
-        JavaScriptResult CreateResourceScript(ResourceManager resourceManager) {
-            ResourceSet resourceSet = resourceManager.GetResourceSet(CultureInfo.CurrentCulture, true, true);
+        static JavaScriptResult CreateResourceScript(ResourceManager resourceManager)
+        {
+            var resourceSet = resourceManager.GetResourceSet(CultureInfo.CurrentCulture, true, true);
             var sb = new StringBuilder("Code52.Language.Dictionary={");
             foreach (DictionaryEntry dictionaryEntry in resourceSet)
             {
@@ -71,7 +80,8 @@ namespace Code52.i18n.MVCFour.Sample.CSharp.Controllers {
                 sb.AppendFormat("\"{0}\":\"{1}\",", dictionaryEntry.Key, Microsoft.Security.Application.Encoder.JavaScriptEncode(value.Replace("\"", "\\\"").Replace('{', '[').Replace('}', ']'), false));
             }
             string script = sb.ToString();
-            if (!string.IsNullOrEmpty(script)) {
+            if (!string.IsNullOrEmpty(script))
+            {
                 script = script.Remove(script.Length - 1);
             }
             script += "};";
