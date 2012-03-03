@@ -1,0 +1,27 @@
+﻿Getting Started
+
+To use the convention-based ModelMetadataProvider (and pull your labels and error messages from resource files) follow these instructions:
+
+1. Open the Global.asax.cs file.
+
+1. Add the following using statement:
+
+	using ModelMetadataExtensions;
+
+2. And modify the Application_Start method to set the ModelMetadataProviders instance.
+
+	protected void Application_Start()
+	{
+		AreaRegistration.RegisterAllAreas();
+
+		ModelMetadataProviders.Current = new ConventionalModelMetadataProvider(false, typeof(Language));
+
+		// other code here
+	}
+
+
+
+
+Release Notes
+------------------
+0.1-InitialRelease
