@@ -42,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="NuSpec\Content\Controllers\AccountController.cs" />
+    <Content Include="NuSpec\Content\Controllers\BaseController.cs" />
+    <Content Include="NuSpec\Content\Controllers\HomeController.cs" />
+    <Content Include="NuSpec\Content\Controllers\LanguageController.cs" />
+    <Content Include="NuSpec\Content\Code\CultureHelper.cs" />
+    <Content Include="NuSpec\Content\Code\LocalizationHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

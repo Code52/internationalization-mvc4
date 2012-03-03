@@ -28,7 +28,7 @@
             <Output ItemName='ProjectRootPath' TaskParameter='Include' />
         </CreateItem>
         <Message Text="Parsing Language.resx" Importance="High" />
-        <Exec Command="build\tools\PsuedoizerConsole.exe &quot;%(ProjectRootPath.FullPath)\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.resx&quot; &quot;%(ProjectRootPath.FullPath)\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.pl.resx&quot;" />
+        <Exec Command="build\PsuedoizerConsole.exe &quot;%(ProjectRootPath.FullPath)\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.resx&quot; &quot;%(ProjectRootPath.FullPath)\src\Code52.i18n.MVC4.Sample.CSharp\Resources\Language.pl.resx&quot;" />
     </Target>
 
 </Project>
