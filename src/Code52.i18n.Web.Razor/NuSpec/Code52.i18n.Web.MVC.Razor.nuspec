@@ -14,7 +14,7 @@
         <tags>localization globalization MVC ASP.NET Web Razor</tags>
         <releaseNotes>Initial release</releaseNotes>
         <dependencies>
-            <dependency id="Code52.i18n.Web" version="0.1" />
+            <dependency id="Code52.i18n.Web" />
         </dependencies>
     </metadata>
 </package>
