@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.CSharp.Tests", "Samp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.MVC4.Logic", "Code52.i18n.MVC4.Logic\Code52.i18n.MVC4.Logic.csproj", "{1554DFF2-E628-47DE-B2F6-720F316A3298}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.MVC4.Views", "Code52.i18n.MVC4.Views\Code52.i18n.MVC4.Views.csproj", "{E2B91985-9D5F-4CB6-8F5A-BA2B4E7A8244}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.MVC4.Web", "Code52.i18n.MVC4.Views\Code52.i18n.MVC4.Web.csproj", "{E2B91985-9D5F-4CB6-8F5A-BA2B4E7A8244}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.MVC4.All", "Code52.i18n.MVC4.All\Code52.i18n.MVC4.All.csproj", "{760047A6-E56D-49CD-AD1E-1E1341D53404}"
 EndProject
@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.MVC3.All", "Cod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.MVC3.Logic", "Code52.i18n.MVC3.Logic\Code52.i18n.MVC3.Logic.csproj", "{AB508CF3-5988-4275-B29F-3E192836F166}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.MVC3.Views", "Code52.i18n.MVC3.Views\Code52.i18n.MVC3.Views.csproj", "{273BA0A3-5BF6-460F-AE8C-5354ACCC369F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code52.i18n.MVC3.Web", "Code52.i18n.MVC3.Views\Code52.i18n.MVC3.Web.csproj", "{273BA0A3-5BF6-460F-AE8C-5354ACCC369F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

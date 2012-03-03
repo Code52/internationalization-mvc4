@@ -74,7 +74,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NuSpec\Code52.i18n.MVC4.Views.nuspec" />
+    <None Include="NuSpec\Code52.i18n.MVC4.Web.nuspec" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

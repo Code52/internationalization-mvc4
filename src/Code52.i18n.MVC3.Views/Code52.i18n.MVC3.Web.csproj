@@ -62,7 +62,7 @@
     <Content Include="NuSpec\Content\Content\images\WorldHeader.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NuSpec\Code52.i18n.MVC3.Views.nuspec" />
+    <None Include="NuSpec\Code52.i18n.MVC3.Web.nuspec" />
     <None Include="NuSpec\Content\Views\Account\ChangePassword.cshtml.pp" />
     <None Include="NuSpec\Content\Views\Account\ChangePasswordSuccess.cshtml" />
     <None Include="NuSpec\Content\Views\Account\Login.cshtml.pp" />

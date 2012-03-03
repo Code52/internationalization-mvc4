@@ -4,7 +4,7 @@
   <metadata>
     <id>Code52.i18n.MVC4.Views</id>
     <version>0.1</version>
-    <title>[Code52] i18n Template for MVC4 (Views)</title>
+    <title>[Code52] i18n Template for MVC4 (Web)</title>
     <authors>bforster, dchristiansen</authors>
     <owners>bforster, dchristiansen</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -12,6 +12,9 @@
     <description>A core package to create an internationalization-ready web application</description>
     <summary></summary>
     <tags>localization globalization MVC MVC4 ASP.NET Web</tags>
+    <dependencies>
+    
+    </dependencies>
     <releaseNotes>Initial release</releaseNotes>
   </metadata>
 </package>

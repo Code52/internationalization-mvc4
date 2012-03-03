@@ -4,7 +4,7 @@
   <metadata>
     <id>Code52.i18n.MVC3.All</id>
     <version>0.1</version>
-    <title>[Code52] ASP.NET Internationalized Template for MVC3</title>
+    <title>[Code52] i18n Template for MVC4</title>
     <authors>bforster, dchristiansen</authors>
     <owners>bforster, dchristiansen</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -13,8 +13,9 @@
     <summary></summary>
     <tags>localization globalization MVC MVC3 ASP.NET Web</tags>
     <dependencies>
+      <dependency id="Code52.i18n" version="0.1" />
       <dependency id="Code52.i18n.MVC3.Logic" version="0.1" />
-      <dependency id="Code52.i18n.MVC3.Views" version="0.1" />
+      <dependency id="Code52.i18n.MVC3.Web" version="0.1" />
       <dependency id="WebActivator" version="1.5" />
       <dependency id="ModelMetadataExtensionsWithBugfix" version="0.1.2" />
     </dependencies>
