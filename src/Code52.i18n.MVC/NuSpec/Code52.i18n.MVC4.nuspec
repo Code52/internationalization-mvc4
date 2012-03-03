@@ -12,7 +12,6 @@
         <summary></summary>
         <tags>localization globalization MVC MVC4 ASP.NET Web</tags>
         <dependencies>
-            <dependency id="AspNetMvc" version="4.0.20126.16343" />
             <dependency id="AntiXSS" version="4.2.1" />
             <dependency id="Code52.i18n.Web" />
             <dependency id="jquery-globalize" version="[0.1.0]" />
