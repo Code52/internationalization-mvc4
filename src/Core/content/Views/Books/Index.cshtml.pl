@@ -1,6 +1,6 @@
-﻿@using Code52.i18n.MVCFour.Sample.CSharp.Resources
+﻿@using $rootnamespace$.Resources
 
-@model IEnumerable<Code52.i18n.MVCFour.Sample.CSharp.Models.Book>
+@model IEnumerable<$rootnamespace$.Models.Book>
 
 @{
     ViewBag.Title = "Index";

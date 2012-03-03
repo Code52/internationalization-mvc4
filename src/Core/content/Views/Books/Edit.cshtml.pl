@@ -1,6 +1,6 @@
-﻿@using Code52.i18n.MVCFour.Sample.CSharp.Resources
+﻿@using $rootnamespace$.Resources
 
-@model Code52.i18n.MVCFour.Sample.CSharp.Models.Book
+@model $rootnamespace$.Models.Book
 
 @{
     ViewBag.Title = "Edit";

@@ -117,17 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Books_Book" xml:space="preserve">
-    <value>Book</value>
-  </data>
-  <data name="Books_Create" xml:space="preserve">
-    <value>Create</value>
-  </data>
-  <data name="Book_Author" xml:space="preserve">
-    <value>Author</value>
-  </data>
-  <data name="Book_Title" xml:space="preserve">
-    <value>Title</value>
+  <data name="Global_CreateNew" xml:space="preserve">
+    <value>Create New</value>
   </data>
   <data name="ChangePasswordModel_ConfirmPassword" xml:space="preserve">
     <value>Confirm new password</value>
@@ -197,5 +188,29 @@
   <data name="Social_Twitter" xml:space="preserve">
     <value>Twitter</value>
     <comment>A link to Twitter - title reads Twitter</comment>
+  </data>
+  <data name="Global_BackToList" xml:space="preserve">
+    <value>Back to List</value>
+  </data>
+  <data name="Global_Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="Global_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Global_DeleteConfirm" xml:space="preserve">
+    <value>Are you sure you want to delete this?</value>
+  </data>
+  <data name="Global_Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Global_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Global_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Menu_Books" xml:space="preserve">
+    <value>Books</value>
   </data>
 </root>

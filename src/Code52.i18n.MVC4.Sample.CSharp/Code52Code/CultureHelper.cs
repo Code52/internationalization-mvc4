@@ -15,9 +15,6 @@
         private static readonly ConcurrentDictionary<string, string> _getImplementedCultureCache = new ConcurrentDictionary<string, string>();
 
         public static string GetImplementedCulture(string name) {
-#if DEBUG
-          return CacheCulture(name, "pl");
-#else
           if (string.IsNullOrEmpty(name))
             return GetDefaultCulture(); // return Default culture
           if (_getImplementedCultureCache.ContainsKey(name))
@@ -31,8 +28,7 @@
             if (c.StartsWith(n))
               return CacheCulture(name, c);
           return CacheCulture(name, GetDefaultCulture()); // return Default culture as no match found
-#endif
-                                                                }
+        }
 
         private static string CacheCulture(string originalName, string implementedName)
         {

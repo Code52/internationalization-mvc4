@@ -112,17 +112,11 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Book_Author" xml:space="preserve">
-    <value>[Åūŧĥőř !!! !!! !!! !!! !!!]</value>
-  </data>
-  <data name="Book_Title" xml:space="preserve">
-    <value>[Ŧįŧľę !!! !!! !!! !!!]</value>
-  </data>
   <data name="ChangePasswordModel_ConfirmPassword" xml:space="preserve">
     <value>[Cőŉƒįřm ŉęŵ päşşŵőřđ !!! !!!]</value>
   </data>
@@ -141,6 +135,30 @@
   <data name="Demonstration_Alert" xml:space="preserve">
     <value>[Ŧĥįş ŧęχŧ čämę ƒřőm ŧĥę řęşőūřčę ƒįľę. ĥőŵ čőőľ įş ŧĥäŧ. !!! !!! !!!]</value>
   </data>
+  <data name="Global_BackToList" xml:space="preserve">
+    <value>[ßäčĸ ŧő Ŀįşŧ !!! !!!]</value>
+  </data>
+  <data name="Global_Create" xml:space="preserve">
+    <value>[Cřęäŧę !!! !!! !!! !!! !!!]</value>
+  </data>
+  <data name="Global_CreateNew" xml:space="preserve">
+    <value>[Cřęäŧę Ńęŵ !!! !!!]</value>
+  </data>
+  <data name="Global_Delete" xml:space="preserve">
+    <value>[Đęľęŧę !!! !!! !!! !!! !!!]</value>
+  </data>
+  <data name="Global_DeleteConfirm" xml:space="preserve">
+    <value>[Åřę yőū şūřę yőū ŵäŉŧ ŧő đęľęŧę ŧĥįş? !!! !!!]</value>
+  </data>
+  <data name="Global_Details" xml:space="preserve">
+    <value>[Đęŧäįľş !!! !!! !!! !!! !!! !!!]</value>
+  </data>
+  <data name="Global_Edit" xml:space="preserve">
+    <value>[Ēđįŧ !!! !!! !!!]</value>
+  </data>
+  <data name="Global_Save" xml:space="preserve">
+    <value>[Ŝävę !!! !!! !!!]</value>
+  </data>
   <data name="LoginModel_Password" xml:space="preserve">
     <value>[Päşşŵőřđ !!! !!! !!! !!! !!! !!! !!!]</value>
   </data>
@@ -158,6 +176,9 @@
   </data>
   <data name="Menu_About" xml:space="preserve">
     <value>[Åþőūŧ !!! !!! !!! !!!]</value>
+  </data>
+  <data name="Menu_Books" xml:space="preserve">
+    <value>[ßőőĸş !!! !!! !!! !!!]</value>
   </data>
   <data name="Menu_Contact" xml:space="preserve">
     <value>[Cőŉŧäčŧ !!! !!! !!! !!! !!! !!!]</value>

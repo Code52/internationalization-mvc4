@@ -1,10 +1,10 @@
-﻿namespace Code52.i18n.MVCFour.Sample.CSharp.Controllers
-{
-  using System.Linq;
-  using System.Web.Mvc;
-  using System.Collections.Generic;
-  using Models;
+﻿using System.Linq;
+using System.Web.Mvc;
+using System.Collections.Generic;
+using $rootnamespace$.Models;
 
+namespace $rootnamespace$.Controllers
+{
   public class BooksController : BaseController
   {
     private static readonly List<Book> _booksRepository = new List<Book>(); // not thread safe.
@@ -36,7 +36,6 @@
 
       book.Id = _booksRepository.Count == 0 ? 1 : _booksRepository.Max(b => b.Id) + 1;
       _booksRepository.Add(book);
-
       return RedirectToAction("Index");
     }
 
@@ -58,7 +57,6 @@
       var bookToEdit = _booksRepository.Single(b => b.Id == book.Id);
       bookToEdit.Title = book.Title;
       bookToEdit.Author = book.Author;
-
       return RedirectToAction("Index");
     }
 
@@ -79,7 +77,6 @@
 
       var bookToRemove = _booksRepository.Single(b => b.Id == id);
       _booksRepository.Remove(bookToRemove);
-
       return RedirectToAction("Index");
     }
   }

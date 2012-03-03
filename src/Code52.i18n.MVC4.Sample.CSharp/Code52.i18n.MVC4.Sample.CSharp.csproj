@@ -145,6 +145,11 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Books.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Books.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Language.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -604,6 +609,11 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Books.pl.resx" />
+    <EmbeddedResource Include="Resources\Books.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Books.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Language.en-US.resx" />
     <EmbeddedResource Include="Resources\Language.fr.resx" />
     <EmbeddedResource Include="Resources\Language.pl.resx" />
