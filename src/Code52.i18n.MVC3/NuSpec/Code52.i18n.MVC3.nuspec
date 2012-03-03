@@ -16,6 +16,7 @@
       <dependency id="Code52.i18n" version="0.1" />
       <dependency id="AntiXSS" version="4.2.1" />
       <dependency id="ModelMetadataExtensionsWithBugfix" version="0.1.2" />
+      <dependency id="WebActivator" version="1.5" />
     </dependencies>
     <releaseNotes>Initial release</releaseNotes>
   </metadata>

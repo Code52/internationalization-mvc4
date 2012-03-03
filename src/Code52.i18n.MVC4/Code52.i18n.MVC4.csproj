@@ -77,6 +77,7 @@
     <None Include="NuSpec\Code52.i18n.MVC4.nuspec">
       <SubType>Designer</SubType>
     </None>
+    <None Include="NuSpec\Content\App_Start\ModelMetadataProvider.cs.pp" />
     <None Include="NuSpec\Content\Controllers\LanguageController.cs.pp" />
     <None Include="NuSpec\Content\Controllers\AccountController.cs.pp" />
     <None Include="NuSpec\Content\Controllers\BaseController.cs.pp" />

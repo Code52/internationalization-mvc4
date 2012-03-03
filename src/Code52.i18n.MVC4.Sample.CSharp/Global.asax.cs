@@ -40,8 +40,6 @@ namespace Code52.i18n.MVCFour.Sample.CSharp
         {
             AreaRegistration.RegisterAllAreas();
 
-            ModelMetadataProviders.Current = new ConventionalModelMetadataProvider(false, typeof(Language));
-
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 

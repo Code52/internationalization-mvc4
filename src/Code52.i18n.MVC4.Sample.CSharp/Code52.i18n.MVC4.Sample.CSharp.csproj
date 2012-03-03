@@ -130,8 +130,12 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.5\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\ModelMetadataProvider.cs" />
     <Compile Include="Code52Code\LocalizationHelpers.cs" />
     <Compile Include="Code52Code\CultureHelper.cs" />
     <Compile Include="Controllers\AccountController.cs" />
