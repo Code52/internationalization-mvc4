@@ -1,4 +1,4 @@
-@model Code52.i18n.MVCFour.Sample.CSharp.Models.RegisterModel
+@model $rootnamespace$.Models.Accounts.RegisterModel
 
 @{
     ViewBag.Title = "Register";

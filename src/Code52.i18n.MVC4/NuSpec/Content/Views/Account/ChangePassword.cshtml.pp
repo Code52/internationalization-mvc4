@@ -1,4 +1,4 @@
-@model Code52.i18n.MVCFour.Sample.CSharp.Models.ChangePasswordModel
+@model $rootnamespace$.Models.Accounts.ChangePasswordModel
 
 @{
     ViewBag.Title = "Change Password";

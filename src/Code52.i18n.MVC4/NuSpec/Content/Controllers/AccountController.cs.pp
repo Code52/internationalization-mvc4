@@ -5,7 +5,7 @@
     using System.Web.Mvc;
     using System.Web.Security;
 
-    using Code52.i18n.MVCFour.Sample.CSharp.Models;
+    using $rootnamespace$.Models.Accounts;
 
     [Authorize]
     public class AccountController : BaseController {

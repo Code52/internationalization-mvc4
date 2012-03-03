@@ -1,4 +1,4 @@
-﻿namespace $rootnamespace$.Code52Code 
+﻿namespace $rootnamespace$.Code 
 {
     using System;
     using System.Collections.Concurrent;

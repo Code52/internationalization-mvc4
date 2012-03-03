@@ -1,11 +1,11 @@
-﻿namespace Code52.i18n.MVCFour.Sample.CSharp.Controllers {
+﻿using Code52.i18n.MVCFour.Sample.CSharp.Models.Accounts;
+
+namespace Code52.i18n.MVCFour.Sample.CSharp.Controllers {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Web.Mvc;
     using System.Web.Security;
-
-    using Code52.i18n.MVCFour.Sample.CSharp.Models;
 
     [Authorize]
     public class AccountController : BaseController {

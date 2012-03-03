@@ -55,7 +55,9 @@
     <Folder Include="NuSpec\tools\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NuSpec\Code52.i18n.nuspec" />
+    <None Include="NuSpec\Code52.i18n.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="NuSpec\Content\web.config.transform">
       <SubType>Designer</SubType>
     </None>

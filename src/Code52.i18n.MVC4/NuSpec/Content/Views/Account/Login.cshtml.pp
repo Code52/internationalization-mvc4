@@ -1,4 +1,4 @@
-@model Code52.i18n.MVCFour.Sample.CSharp.Models.LoginModel
+@model $rootnamespace$.Models.Accounts.LoginModel
 
 @{
     ViewBag.Title = "Log in";
