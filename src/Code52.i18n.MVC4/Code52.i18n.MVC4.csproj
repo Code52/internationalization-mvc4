@@ -99,10 +99,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="NuSpec\Content\App_Readme\Code52.i18n.MVC4.readme.txt" />
+    <Content Include="NuSpec\Content\Content\images\bg_regions_international_tile.png" />
+    <Content Include="NuSpec\Content\Content\images\flags\de.png" />
+    <Content Include="NuSpec\Content\Content\images\flags\es.png" />
+    <Content Include="NuSpec\Content\Content\images\flags\fr.png" />
+    <Content Include="NuSpec\Content\Content\images\flags\gb.png" />
+    <Content Include="NuSpec\Content\Content\images\flags\it.png" />
+    <Content Include="NuSpec\Content\Content\images\icon_international_map.png" />
+    <Content Include="NuSpec\Content\Content\images\WorldHeader.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NuSpec\tools\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

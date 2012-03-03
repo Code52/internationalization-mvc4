@@ -1,6 +1,6 @@
 @echo Off
 SETLOCAL
-SET VERSION=0.1
+SET VERSION=0.1.1
 SET NUGET=build\nuget.exe
 
 set config=%1
@@ -12,6 +12,6 @@ if "%config%" == "" (
 
 mkdir artifacts
 
-.\build\nuget.exe pack src\Code52.i18n\NuSpec\Code52.i18n.nuspec -BasePath src\Code52.i18n\NuSpec\ -OutputDirectory artifacts
-.\build\nuget.exe pack src\Code52.i18n.MVC3\NuSpec\Code52.i18n.MVC3.nuspec -BasePath src\Code52.i18n.MVC3\NuSpec\ -OutputDirectory artifacts
-.\build\nuget.exe pack src\Code52.i18n.MVC4\NuSpec\Code52.i18n.MVC4.nuspec -BasePath src\Code52.i18n.MVC4\NuSpec\ -OutputDirectory artifacts
+.\build\nuget.exe pack src\Code52.i18n\NuSpec\Code52.i18n.nuspec -Version %VERSION% -OutputDirectory artifacts
+.\build\nuget.exe pack src\Code52.i18n.MVC3\NuSpec\Code52.i18n.MVC3.nuspec -Version %VERSION% -OutputDirectory artifacts
+.\build\nuget.exe pack src\Code52.i18n.MVC4\NuSpec\Code52.i18n.MVC4.nuspec -Version %VERSION% -OutputDirectory artifacts
