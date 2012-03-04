@@ -1,11 +1,9 @@
 namespace $rootnamespace$.Controllers
 {
-    using System;
     using System.Threading;
-    using System.Web;
     using System.Web.Mvc;
     using System.Web.Routing;
-    using $rootnamespace$.Code;
+    using Code52.i18n;
 
     public abstract class BaseController : Controller 
     {

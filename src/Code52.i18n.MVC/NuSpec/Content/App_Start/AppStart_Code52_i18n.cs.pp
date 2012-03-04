@@ -4,12 +4,13 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-[assembly: WebActivator.PreApplicationStartMethod(typeof($rootnamespace$.AppStart_Code52_I18n), "Start")]
+[assembly: WebActivator.PreApplicationStartMethod(typeof($rootnamespace$.App_Start.Code52_i18n), "Start")]
 namespace $rootnamespace$.App_Start {
-    /// <summary>
-    /// TODO: Update summary.
-    /// </summary>
-    public class AppStart_Code52_i18n {
+
+    using System.Web.Mvc;
+    using System.Web.Routing;
+
+    public class Code52_i18n {
         public static void Start() {
             RouteTable.Routes.MapRoute("Language", "i18n/Code52.i18n.language.js", new { controller = "Language", action = "Language" });
         }
