@@ -1,15 +1,13 @@
-namespace $rootnamespace$.Controllers
+namespace $rootnamespace$.Code52.i18n
 {
-    using System.Threading;
-    using System.Web.Mvc;
-    using System.Web.Routing;
-    using Code52.i18n;
+	using System.Threading;
+	using System.Web.Mvc;
 
-    public abstract class BaseController : Controller 
+    public class LanguageFilterAttribute : ActionFilterAttribute
     {
-        protected override void Execute(RequestContext requestContext)
+        public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            var request = requestContext.HttpContext.Request;
+            var request = filterContext.HttpContext.Request;
             string cultureName = null;
             var cultureCookie = request.Cookies["_culture"];
             if (request.UserLanguages != null)
@@ -18,7 +16,7 @@ namespace $rootnamespace$.Controllers
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(cultureName);
             Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentCulture;
 
-            base.Execute(requestContext);
+            base.OnActionExecuting(filterContext);
         }
     }
 }
