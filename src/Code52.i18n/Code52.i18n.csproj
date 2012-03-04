@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="NuSpec\Content\Code52.i18n\CultureHelper.cs.pp" />
-    <None Include="NuSpec\tools\install.ps1" />
     <None Include="NuSpec\Code52.i18n.nuspec">
       <SubType>Designer</SubType>
     </None>

@@ -42,12 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="NuSpec\Code52.i18n.MVC4.Example.Razor.nuspec" />
+    <None Include="NuSpec\Content\App_Start\ModelMetadataProvider.cs.pp" />
     <None Include="NuSpec\Content\Controllers\AccountController.cs.pp" />
     <None Include="NuSpec\Content\Controllers\HomeController.cs.pp" />
     <None Include="NuSpec\Content\Models\Accounts\ChangePasswordModel.cs.pp" />
     <None Include="NuSpec\Content\Models\Accounts\LoginModel.cs.pp" />
     <None Include="NuSpec\Content\Models\Accounts\RegisterModel.cs.pp" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="NuSpec\tools\install.ps1" />
   </ItemGroup>
   <ItemGroup>
     <None Include="NuSpec\Content\Resources\Language.Designer.cs.pp" />
