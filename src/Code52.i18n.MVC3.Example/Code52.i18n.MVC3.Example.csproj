@@ -58,11 +58,20 @@
     <None Include="NuSpec\Content\Models\Book.cs.pp" />
     <None Include="NuSpec\Content\Resources\Books.Designer.cs.pp" />
     <None Include="NuSpec\Content\Resources\Language.Designer.cs.pp" />
+    <None Include="NuSpec\Content\Views\Account\ChangePassword.cshtml.pp" />
+    <None Include="NuSpec\Content\Views\Account\ChangePasswordSuccess.cshtml" />
+    <None Include="NuSpec\Content\Views\Account\Login.cshtml.pp" />
+    <None Include="NuSpec\Content\Views\Account\Register.cshtml.pp" />
     <None Include="NuSpec\Content\Views\Books\Create.cshtml.pp" />
     <None Include="NuSpec\Content\Views\Books\Delete.cshtml.pp" />
     <None Include="NuSpec\Content\Views\Books\Details.cshtml.pp" />
     <None Include="NuSpec\Content\Views\Books\Edit.cshtml.pp" />
     <None Include="NuSpec\Content\Views\Books\Index.cshtml.pp" />
+    <None Include="NuSpec\Content\Views\Home\About.cshtml" />
+    <None Include="NuSpec\Content\Views\Home\Contact.cshtml" />
+    <None Include="NuSpec\Content\Views\Home\Index.cshtml" />
+    <None Include="NuSpec\Content\Views\Shared\_Layout.Code52.cshtml.pp" />
+    <None Include="NuSpec\Content\Views\Shared\_LoginPartial.cshtml" />
     <None Include="NuSpec\tools\install.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
