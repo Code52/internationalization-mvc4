@@ -8,7 +8,7 @@
     using $rootnamespace$.Models.Accounts;
 
     [Authorize]
-    public class AccountController : BaseController {
+    public class AccountController : Controller {
 
         //
         // GET: /Account/Login
