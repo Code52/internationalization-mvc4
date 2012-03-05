@@ -1,6 +1,6 @@
 ﻿@using $rootnamespace$.Resources
-@using $rootnamespace$.CSharp
 @using $rootnamespace$.Code52.i18n
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
