@@ -15,7 +15,6 @@
     <dependencies>
         <dependency id="Code52.i18n" />
         <dependency id="Code52.i18n.MVC3" />
-        <dependency id="Code52.i18n.Web.MVC.Razor" />
     </dependencies>
     <releaseNotes>Initial release</releaseNotes>
   </metadata>

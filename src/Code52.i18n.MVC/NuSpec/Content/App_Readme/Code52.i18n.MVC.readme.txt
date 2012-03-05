@@ -1,10 +1,33 @@
-﻿Getting Started
+﻿[Code52.i18n]
 
+--Getting Started--
 
+We don't want to overwrite your default layout - in fact, it requires us to jump through some hoops and we're afraid we might annoy you. 
 
+If you could kindly change your Views/_Layout.cshtml file to look like this:
 
+@{
+    Layout = "~/Views/Shared/_Layout.Code52.cshtml";
+}
 
+that'd be awesome.
 
-Release Notes
-------------------
-0.1-InitialRelease
+--Customizing--
+
+If you want to update your master page (say if you've got some sweet markup), you'll need to have a look at the Views/Home/Index.cshtml and see 
+which has a section like this:
+
+@section featured {
+	<!-- bitching markup here -->
+}
+
+Because of that, we've got our own _Layout.Code52.cshtml file. Feel free to modify that to suit.
+
+--Cleanup--
+
+Lastly, to switch it back to how you had it, just change your Views/_Layout.cshtml file back to:
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+

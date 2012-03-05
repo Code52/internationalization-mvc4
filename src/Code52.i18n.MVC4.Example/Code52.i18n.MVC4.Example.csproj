@@ -66,6 +66,7 @@
     <None Include="NuSpec\Content\Views\Home\Index.cshtml" />
     <None Include="NuSpec\Content\Views\Shared\_Layout.Code52.cshtml.pp" />
     <None Include="NuSpec\Content\Views\Shared\_LoginPartial.cshtml" />
+    <None Include="NuSpec\Content\Views\_Layout.i18n.cshtml" />
     <None Include="NuSpec\tools\install.ps1" />
   </ItemGroup>
   <ItemGroup>
