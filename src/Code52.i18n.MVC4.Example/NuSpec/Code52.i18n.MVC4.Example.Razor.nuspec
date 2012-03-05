@@ -1,10 +1,10 @@
-<?xml version="1.0"?>
+  <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <!-- Values in dollar $igns are automatically pulled from the AssemblyInfo.cs attributes by NuGet.exe -->
   <metadata>
     <id>Code52.i18n.MVC4.Example.Razor</id>
     <version>0.1</version>
-    <title>[Code52] i18n Template for MVC4 (Razor Example)</title>
+    <title>[Code52] i18n Razor Site Template for MVC4</title>
     <authors>bforster, dchristiansen</authors>
     <owners>bforster, dchristiansen</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,6 +15,7 @@
     <dependencies>
         <dependency id="Code52.i18n" />
         <dependency id="Code52.i18n.MVC4" />
+        <dependency id="jquery.cookie" />
     </dependencies>
     <releaseNotes>Initial release</releaseNotes>
   </metadata>

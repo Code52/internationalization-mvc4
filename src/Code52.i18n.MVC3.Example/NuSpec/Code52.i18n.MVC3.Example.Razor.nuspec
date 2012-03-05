@@ -4,7 +4,7 @@
   <metadata>
     <id>Code52.i18n.MVC3.Example.Razor</id>
     <version>0.1</version>
-    <title>[Code52] i18n Template for MVC3 (Razor Example)</title>
+    <title>[Code52] i18n Razor Site Template for MVC3 </title>
     <authors>bforster, dchristiansen</authors>
     <owners>bforster, dchristiansen</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,6 +15,7 @@
     <dependencies>
         <dependency id="Code52.i18n" />
         <dependency id="Code52.i18n.MVC3" />
+        <dependency id="jquery.cookie" />
     </dependencies>
     <releaseNotes>Initial release</releaseNotes>
   </metadata>
