@@ -1,16 +1,19 @@
 ﻿@using $rootnamespace$.Resources
 @using $rootnamespace$.Code52.i18n
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title - @Language.Master_SiteTitle</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/themes/base/jquery.ui.all.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.6.2.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.8.11.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/modernizr-2.0.6-development-only.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/AjaxLogin.js")" type="text/javascript"></script>
     <link href="@Url.Content("~/Content/code52.i18n/Code52.i18n.css")" rel="stylesheet" type="text/css" />
-    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/themes/base/css")" rel="stylesheet" type="text/css" />
-    <script src="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Scripts/js")"></script>
+    <script src="@Url.Content("~/Scripts/Code52.i18n.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/jquery.cookie.js")" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width" />
 </head>
@@ -19,10 +22,10 @@
         <div id="placeholder-regions">
         </div>
         <div id="i18n-options-container">
-        <div id="i18n-options">
-            <a title="International" href="#" id="currentlanguage_link"><span id="currentlanguage_text">
-            </span>&nbsp;<span id="expandSign">[+]</span> </a>
-        </div>
+            <div id="i18n-options">
+                <a title="International" href="#" id="currentlanguage_link"><span id="currentlanguage_text">
+                </span>&nbsp;<span id="expandSign">[+]</span> </a>
+            </div>
             <div id="i18n-regions">
                 <ul>
                     <li>Languages
@@ -92,11 +95,11 @@
         <script type="text/javascript" src="@String.Format("http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_{0}.js", CultureHelper.GetCurrentNeutralCulture())"></script>
     }
     <script type="text/javascript" src="@Url.Content("/Scripts/Code52.i18n.js")"></script>
+    @* ReSharper disable Html.PathError *@
+    <script type="text/javascript" src="@Url.Content("/i18n/Code52.i18n.language.js")"></script>
+    @* ReSharper restore Html.PathError *@
     <script type="text/javascript">
         Code52.Language.Init('@CultureHelper.GetCurrentCulture()');
-	</script>
-@* ReSharper disable Html.PathError *@
-    <script type="text/javascript" src="@Url.Content("/i18n/Code52.i18n.language.js")"></script>
-@* ReSharper restore Html.PathError *@
+    </script>
 </body>
 </html>

@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+﻿/* File Created: February 28, 2012 */
+(function (window, undefined) {
+=======
 ﻿(function (window, undefined) {
+>>>>>>> bb8d51423c4445c322e11d83d7772b49269e4f99
     var i18n = function () {
         var base = this;
         base.init = function () {
