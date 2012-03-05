@@ -62,6 +62,6 @@ foreach ($item in $resitems.GetEnumerator()) {
 		$lastGenOutput.InnerText = $item.Name.Replace("Resources\", "").Replace(".resx", ".Designer.cs")
 		$resxNode.AppendChild($lastGenOutput)
 	}
-
 }
+
 $projxml.Save($project.FullName)
