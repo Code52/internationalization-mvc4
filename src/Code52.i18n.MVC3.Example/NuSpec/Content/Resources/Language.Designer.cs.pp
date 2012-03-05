@@ -142,6 +142,78 @@ namespace $rootnamespace$.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Back to List.
+        /// </summary>
+        public static string Global_BackToList {
+            get {
+                return ResourceManager.GetString("Global_BackToList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create.
+        /// </summary>
+        public static string Global_Create {
+            get {
+                return ResourceManager.GetString("Global_Create", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create New.
+        /// </summary>
+        public static string Global_CreateNew {
+            get {
+                return ResourceManager.GetString("Global_CreateNew", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        public static string Global_Delete {
+            get {
+                return ResourceManager.GetString("Global_Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete this?.
+        /// </summary>
+        public static string Global_DeleteConfirm {
+            get {
+                return ResourceManager.GetString("Global_DeleteConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Details.
+        /// </summary>
+        public static string Global_Details {
+            get {
+                return ResourceManager.GetString("Global_Details", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        public static string Global_Edit {
+            get {
+                return ResourceManager.GetString("Global_Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        public static string Global_Save {
+            get {
+                return ResourceManager.GetString("Global_Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         public static string LoginModel_Password {
@@ -192,6 +264,15 @@ namespace $rootnamespace$.Resources {
         public static string Menu_About {
             get {
                 return ResourceManager.GetString("Menu_About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Books.
+        /// </summary>
+        public static string Menu_Books {
+            get {
+                return ResourceManager.GetString("Menu_Books", resourceCulture);
             }
         }
         
