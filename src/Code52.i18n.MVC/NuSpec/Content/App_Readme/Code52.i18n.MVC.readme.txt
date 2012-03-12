@@ -2,15 +2,26 @@
 
 --Getting Started--
 
-We don't want to overwrite your default layout - in fact, it requires us to jump through some hoops and we're afraid we might annoy you. 
+1. Refer to our example Layout
 
-If you could kindly change your Views/_Layout.cshtml file to look like this:
+    We don't want to overwrite your default layout - in fact, it requires us to jump through some hoops and we're afraid we might annoy you. 
+    If you could kindly change your Views/_Layout.cshtml file to look like this:
 
-@{
-    Layout = "~/Views/Shared/_Layout.Code52.cshtml";
-}
+    @{
+        Layout = "~/Views/Shared/_Layout.Code52.cshtml";
+    }
 
-that'd be awesome.
+    that'd be awesome.
+
+2. Create your Language resource file
+
+    Add a new item > Resources File. (If resources file isn't visable try changing the selection on the left hand side to the root (such as Visual C#)
+    I usually create a resource file specifically for language resources
+
+    Ensure the strings is the current section selection.
+
+    If your resource file is in a seperate project you may wish to change the access modifier to public so you can access it from other projects.
+
 
 --Customizing--
 
