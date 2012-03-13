@@ -7,7 +7,7 @@
 
     using $rootnamespace$.Models.Accounts;
 
-    public class AccountController : BaseController {
+    public class AccountController : Controller {
 	
         //
         // GET: /Account/Login

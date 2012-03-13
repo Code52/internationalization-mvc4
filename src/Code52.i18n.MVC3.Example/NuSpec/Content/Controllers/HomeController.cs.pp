@@ -2,27 +2,15 @@
 {
     using System.Web.Mvc;
 
-    public class HomeController : BaseController
+    public ActionResult Index()
     {
-        public ActionResult Index()
-        {
-            ViewBag.Message = Resources.Language.Index_Title;
+        ViewBag.Message = "Welcome to ASP.NET MVC!";
 
-            return View();
-        }
+        return View();
+    }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = Resources.Language.About_Title;
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = Resources.Language.Contact_Title;
-
-            return View();
-        }
+    public ActionResult About()
+    {
+        return View();
     }
 }
