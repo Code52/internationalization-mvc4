@@ -16,7 +16,6 @@ if "%version%" == "" (
 rmdir artifacts /S /Q
 mkdir artifacts
 
-.\build\nuget.exe pack src\Code52.i18n\NuSpec\Code52.i18n.nuspec -Version %VERSION% -OutputDirectory artifacts
 .\build\nuget.exe pack src\Code52.i18n.MVC\NuSpec\Code52.i18n.MVC3.nuspec -Version %VERSION% -OutputDirectory artifacts
 .\build\nuget.exe pack src\Code52.i18n.MVC\NuSpec\Code52.i18n.MVC4.nuspec -Version %VERSION% -OutputDirectory artifacts
 .\build\nuget.exe pack src\Code52.i18n.MVC3.Example\NuSpec\Code52.i18n.MVC3.Example.Razor.nuspec -Version %VERSION% -OutputDirectory artifacts
