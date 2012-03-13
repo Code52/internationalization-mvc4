@@ -35,6 +35,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="NuSpec\Code52.i18n.MVC4.nuspec" />
@@ -43,6 +47,7 @@
     <None Include="NuSpec\Content\Code52.i18n\LanguageFilterAttribute.cs.pp" />
     <None Include="NuSpec\Content\Code52.i18n\LocalizationHelpers.cs.pp" />
     <None Include="NuSpec\Content\Controllers\LanguageController.cs.pp" />
+    <None Include="NuSpec\tools\install.ps1" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -56,6 +61,7 @@
     <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\it.png" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\icon_international_map.png" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\WorldHeader.png" />
+    <Content Include="NuSpec\Content\Views\Shared\LanguageSelection.ascx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="NuSpec\Code52.i18n.MVC3.nuspec" />
