@@ -20,7 +20,7 @@
         <releaseNotes>Initial release</releaseNotes>
         <tags>localization globalization MVC MVC4 ASP.NET Web i18n l10n</tags>
     </metadata>
-    <files>
+    <!--<files>
         <file src="Content\App_Readme\Code52.i18n.MVC.readme.txt" target="Content\App_Readme\Code52.i18n.MVC.readme.txt" />
         <file src="Content\App_Start\AppStart_Code52_i18n.cs.pp" target="Content\App_Start\AppStart_Code52_i18n.cs.pp" />
         <file src="..\..\Code52.i18n\NuSpec\Content\Code52.i18n\CultureHelper.cs.pp" target="Content\Code52.i18n\CultureHelper.cs.pp" />
@@ -39,5 +39,5 @@
         <file src="..\..\Code52.i18n\NuSpec\Content\Scripts\Code52.i18n.js" target="Content\Scripts\Code52.i18n.js" />
         <file src="..\..\Code52.i18n\NuSpec\Content\web.config.transform" target="Content\web.config.transform" />
         <file src="tools\install.ps1" target="tools\install.ps1" />
-    </files>
+    </files>-->
 </package>
