@@ -66,6 +66,7 @@
     <None Include="NuSpec\Content\Views\Home\About.cshtml" />
     <None Include="NuSpec\Content\Views\Home\Contact.cshtml" />
     <None Include="NuSpec\Content\Views\Home\Index.cshtml" />
+    <None Include="NuSpec\Content\Views\Shared\LanguageSelection.cshtml" />
     <None Include="NuSpec\Content\Views\Shared\_LoginPartial.cshtml" />
     <None Include="NuSpec\tools\install.ps1" />
   </ItemGroup>
@@ -74,7 +75,7 @@
     <EmbeddedResource Include="NuSpec\Content\Resources\Books.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

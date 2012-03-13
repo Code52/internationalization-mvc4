@@ -1,4 +1,4 @@
-﻿[Code52.i18n]
+﻿[Code52.i18n] - ASP.NET Internationalisation for MVC
 
 -- About Code52 i18n --
 The purpose of the Code52 i18n project is to provide an easy way to implement localisation support to ASP.NET project. We currently have a reference implementation for MVC3 Razor and MVC4 Razor.
@@ -11,7 +11,7 @@ Find out more about Code52 on their website http://code52.org/
 -- Getting Started --
 
 :::::::::::::::::::::::::::::::
-1. Create your Language resource file
+1. Create a Language resource file
 :::::::::::::::::::::::::::::::
 
     Add a new item > Resources File. (If resources file isn't visible try changing the selection on the left hand side to the root (such as Visual C#)
@@ -25,19 +25,33 @@ Find out more about Code52 on their website http://code52.org/
 2. Add reference to language selection UserControl
 :::::::::::::::::::::::::::::::
 
-    Add the following reference to a page / layout that you wish to display the language selection.
+    Add the following reference to a page / layout that you wish to display the language selection options to the user.
 
         @Html.Partial("LanguageSelection")
 
+	
 :::::::::::::::::::::::::::::::
-3. Add JavaScript  references
+3. Update your site layout
 :::::::::::::::::::::::::::::::
 
 
-    Instruction
-    -----------
+    Instructions
+    ------------
 
-    Add the following CSS / JavaScript references to your template or web page.
+	Add this using statement to the top of your Razor file to reference the CultureHelper class:
+	
+	@using Code52.i18n
+
+	Before the </head> tag of your page, add the following resources for styles:
+
+        <link href="@Url.Content("~/Content/code52.i18n/Code52.i18n.css")" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="@Url.Content("/Scripts/Code52.i18n.js")"></script>
+        <script type="text/javascript" src="@Url.Content("/i18n/Code52.i18n.language.js")"></script>
+        <script type="text/javascript">
+            Code52.Language.Init('@CultureHelper.GetCurrentCulture()');
+        </script>
+
+    Before the </body> tag of your page, add the following scripts to set up the localisation and validation:
 
         <script src="@Url.Content("~/Scripts/jquery.globalize/globalize.js")" type="text/javascript"></script>
         <script src="@Url.Content(string.Format("~/Scripts/jquery.globalize/cultures/globalize.culture.{0}.js", CultureHelper.GetCurrentCulture()))" type="text/javascript"></script>
@@ -46,14 +60,6 @@ Find out more about Code52 on their website http://code52.org/
             <script type="text/javascript" src="@String.Format("http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_{0}.js", CultureHelper.GetCurrentNeutralCulture())"></script>
         }
 
-    Add the following Code52 JavaScript references to your template or web page.
-    
-        <link href="@Url.Content("~/Content/code52.i18n/Code52.i18n.css")" rel="stylesheet" type="text/css" />
-        <script type="text/javascript" src="@Url.Content("/Scripts/Code52.i18n.js")"></script>
-        <script type="text/javascript" src="@Url.Content("/i18n/Code52.i18n.language.js")"></script>
-        <script type="text/javascript">
-            Code52.Language.Init('@CultureHelper.GetCurrentCulture()');
-        </script>
 
     Explanation 
     ------------

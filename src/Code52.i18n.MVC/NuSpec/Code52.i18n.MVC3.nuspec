@@ -13,7 +13,7 @@
             <dependency id="WebActivator" version="1.5" />
         </dependencies>
         <id>Code52.i18n.MVC3</id>
-        <title>ASP.NET Internationalisation (i18n) package for MVC3</title>
+        <title>ASP.NET Internationalisation (i18n) for MVC3</title>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A core package to create an internationalization-ready web application</description>
         <summary />
