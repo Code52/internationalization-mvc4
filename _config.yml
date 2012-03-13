@@ -1,0 +1,15 @@
+appname: ASP.NET Internationalisation
+appslogan: 'Making i18n <em>easier</em> for developers'
+username: Code52
+reponame: internationalization-mvc4
+accent: ff3333
+darkaccent: d41c1c
+description: NuGet packages to add internationalisation (i18n) support to an ASP.NET website. Read the original brief on <a href="http://code52.org/internationalization-mvc4.html">Code52</a>
+
+feature1title: 'Cover both client and server'
+feature2title: 'Convention over Configuration'
+feature3title: 'For all types* of ASP.NET apps '
+
+feature1desc: 'Leverage .NET on the server and jQuery.globalize on the client to manage your resources'
+feature2desc: 'Model validation errors using resources, browser detection of the user''s locale, overriding the defaults using a cookie - no manual setup required'
+feature3desc: 'Supports ASP.NET MVC3 and MVC4 (Razor only) but expanding out to other projects over time'
