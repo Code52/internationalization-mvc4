@@ -45,6 +45,12 @@ Find out more about Code52 on their website http://code52.org/
 	where $rootnamespace$ is the name of your application.
 
 
+	Before the closing </head> tag reference a stylesheet to for the language selection page:
+
+	<link href="@Url.Content("~/Content/Code52.i18n/Code52.i18n.css")" rel="stylesheet" type="text/css" />
+
+	
+
     Before the closing </body> tag of your page, add the following scripts to set up the localisation and validation:
 
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
