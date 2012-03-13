@@ -5,9 +5,9 @@
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<title>{{ site.appname }}</title>
-		<link rel="shortcut icon" href="favicon.ico" />
-		<link rel="stylesheet" type="text/css" href="/internationalization-mvc4/css/default.css" />
-		<link rel="stylesheet" type="text/css" href="/internationalization-mvc4/css/nuget-button.min.css" />
+		<link rel="shortcut icon" href="icon.png" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/nuget-button.min.css" />
 	</head>
 	<body>
 		<div id="container">
@@ -17,7 +17,7 @@
 				<img src="logo.png" alt="{{ site.appname }}" />
 				<div style="clear:both">&nbsp;</div>
 			</div>
-			<img src="dropshadow_border_top.png" id="screenshotbordertop"  class="screenshotborder"/>
+			<div class="screenshotborder"/>
 			<div id="features">
 				<div class="feature">
 					<h2>{{ site.feature1title}}</h2>
@@ -36,10 +36,7 @@
 				<div style="clear:both">&nbsp;</div>
 			</div>
 			<img src="dropshadow_border_bottom.png" id="screenshotborderbottom" class="screenshotborder" />
-			<!--<div id="downloads">
-				<a href="{{ site.downloadurl}}"><img src="windows.png" /> Download for Windows</a><br /><br />
-				<a href="http://github.com/{{ site.username }}/{{ site.reponame }}"><img src="github.png" />Get the source</a>
-			</div>-->
+
 			{{content}}
 			
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="Code_52">Tweet</a>
