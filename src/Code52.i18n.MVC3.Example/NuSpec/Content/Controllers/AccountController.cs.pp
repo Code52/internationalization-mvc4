@@ -1,4 +1,5 @@
-﻿namespace $rootnamespace$.Controllers {
+﻿namespace $rootnamespace$.Controllers 
+{
     using System;
     using System.Collections.Generic;
     using System.Linq;

@@ -2,15 +2,18 @@
 {
     using System.Web.Mvc;
 
-    public ActionResult Index()
+	public class HomeController : Controller
     {
-        ViewBag.Message = "Welcome to ASP.NET MVC!";
+		public ActionResult Index()
+		{
+			ViewBag.Message = "Welcome to ASP.NET MVC!";
 
-        return View();
-    }
+			return View();
+		}
 
-    public ActionResult About()
-    {
-        return View();
-    }
+		public ActionResult About()
+		{
+			return View();
+		}
+	}
 }

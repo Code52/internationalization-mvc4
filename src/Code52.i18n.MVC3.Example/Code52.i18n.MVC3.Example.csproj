@@ -40,8 +40,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="NuSpec\Content\Resources\Books.pl.resx" />
     <EmbeddedResource Include="NuSpec\Content\Resources\Books.resx" />
+    <EmbeddedResource Include="NuSpec\Content\Resources\Language.resx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="NuSpec\Code52.i18n.MVC3.Example.Razor.nuspec">
@@ -56,6 +56,7 @@
     <None Include="NuSpec\Content\Models\Accounts\RegisterModel.cs.pp" />
     <None Include="NuSpec\Content\Models\Book.cs.pp" />
     <None Include="NuSpec\Content\Resources\Books.Designer.cs.pp" />
+    <None Include="NuSpec\Content\Resources\Language.Designer.cs.pp" />
     <None Include="NuSpec\Content\Views\Account\ChangePassword.cshtml.pp" />
     <None Include="NuSpec\Content\Views\Account\ChangePasswordSuccess.cshtml" />
     <None Include="NuSpec\Content\Views\Account\Login.cshtml.pp" />
@@ -66,7 +67,6 @@
     <None Include="NuSpec\Content\Views\Books\Edit.cshtml.pp" />
     <None Include="NuSpec\Content\Views\Books\Index.cshtml.pp" />
     <None Include="NuSpec\Content\Views\Home\About.cshtml" />
-    <None Include="NuSpec\Content\Views\Home\Contact.cshtml" />
     <None Include="NuSpec\Content\Views\Home\Index.cshtml" />
     <None Include="NuSpec\Content\Views\Shared\LanguageSelection.cshtml" />
     <None Include="NuSpec\Content\Views\Shared\_LoginPartial.cshtml" />
