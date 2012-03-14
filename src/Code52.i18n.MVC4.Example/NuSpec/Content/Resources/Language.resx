@@ -120,6 +120,9 @@
   <data name="About_Title" xml:space="preserve">
     <value>Your quintessential app description page.</value>
   </data>
+  <data name="Global_CreateNew" xml:space="preserve">
+    <value>Create New</value>
+  </data>
   <data name="ChangePasswordModel_ConfirmPassword" xml:space="preserve">
     <value>Confirm new password</value>
   </data>
@@ -144,30 +147,6 @@
   <data name="Index_Title" xml:space="preserve">
     <value>Modify this template to jump-start your ASP.NET application</value>
   </data>
-  <data name="Global_BackToList" xml:space="preserve">
-    <value>[ßäčĸ ŧő Ŀįşŧ !!! !!!]</value>
-  </data>
-  <data name="Global_Create" xml:space="preserve">
-    <value>[Cřęäŧę !!! !!! !!! !!! !!!]</value>
-  </data>
-  <data name="Global_CreateNew" xml:space="preserve">
-    <value>[Cřęäŧę Ńęŵ !!! !!!]</value>
-  </data>
-  <data name="Global_Delete" xml:space="preserve">
-    <value>[Đęľęŧę !!! !!! !!! !!! !!!]</value>
-  </data>
-  <data name="Global_DeleteConfirm" xml:space="preserve">
-    <value>[Åřę yőū şūřę yőū ŵäŉŧ ŧő đęľęŧę ŧĥįş? !!! !!!]</value>
-  </data>
-  <data name="Global_Details" xml:space="preserve">
-    <value>[Đęŧäįľş !!! !!! !!! !!! !!! !!!]</value>
-  </data>
-  <data name="Global_Edit" xml:space="preserve">
-    <value>[Ēđįŧ !!! !!! !!!]</value>
-  </data>
-  <data name="Global_Save" xml:space="preserve">
-    <value>[Ŝävę !!! !!! !!!]</value>
-  </data>
   <data name="LoginModel_Password" xml:space="preserve">
     <value>Password</value>
   </data>
@@ -187,9 +166,6 @@
   <data name="Menu_About" xml:space="preserve">
     <value>About</value>
     <comment>Main menu - link text - About</comment>
-  </data>
-  <data name="Menu_Books" xml:space="preserve">
-    <value>[ßőőĸş !!! !!! !!! !!!]</value>
   </data>
   <data name="Menu_Contact" xml:space="preserve">
     <value>Contact</value>
@@ -221,5 +197,29 @@
   <data name="Social_Twitter" xml:space="preserve">
     <value>Twitter</value>
     <comment>A link to Twitter - title reads Twitter</comment>
+  </data>
+  <data name="Global_BackToList" xml:space="preserve">
+    <value>Back to List</value>
+  </data>
+  <data name="Global_Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="Global_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Global_DeleteConfirm" xml:space="preserve">
+    <value>Are you sure you want to delete this?</value>
+  </data>
+  <data name="Global_Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Global_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Global_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Menu_Books" xml:space="preserve">
+    <value>Books</value>
   </data>
 </root>

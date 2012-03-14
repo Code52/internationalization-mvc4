@@ -1,5 +1,4 @@
 param($installPath, $toolsPath, $package, $project)
-
 #script to fix code-behind for resx
 set-alias Write-Host -Name whecho
 whecho "Restoring resource code-behinds (this may cause the project to be reloaded with a dialog) ..."

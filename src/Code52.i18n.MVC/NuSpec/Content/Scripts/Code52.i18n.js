@@ -9,7 +9,7 @@
                 placeholderregionsID: '#placeholder-regions',
                 langOptionsContainerID: '#i18n-options-container',
                 langOptionsRegionsID: '#i18n-regions',
-                currentLanguage_Link: '#currentlanguage_text',
+                currentLanguage_Link: '#currentlanguage_link',
                 currentLanguage_Text: '#currentlanguage_text'
             },
             init: function () {

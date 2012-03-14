@@ -1,10 +1,4 @@
-﻿// -----------------------------------------------------------------------
-// <copyright file="AppStart_Code52_i18n.cs" company="">
-// TODO: Update copyright text.
-// </copyright>
-// -----------------------------------------------------------------------
-
-[assembly: WebActivator.PreApplicationStartMethod(typeof($rootnamespace$.App_Start.Code52_i18n), "Start")]
+﻿[assembly: WebActivator.PreApplicationStartMethod(typeof($rootnamespace$.App_Start.Code52_i18n), "Start")]
 namespace $rootnamespace$.App_Start {
 
     using System.Web.Mvc;
