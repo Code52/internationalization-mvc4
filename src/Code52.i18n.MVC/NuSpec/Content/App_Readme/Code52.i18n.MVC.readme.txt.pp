@@ -1,7 +1,8 @@
 ﻿[Code52.i18n] - ASP.NET Internationalisation for MVC
 
 -- About Code52 i18n --
-The purpose of the Code52 i18n project is to provide an easy way to implement localisation support to ASP.NET project. We currently have a reference implementation for MVC3 Razor and MVC4 Razor.
+The purpose of the Code52 i18n project is to provide an easy way to implement localisation support 
+to ASP.NET project. We currently have a reference implementation for MVC3 Razor and MVC4 Razor.
 
 -- About Code52 --
 We want to build fun stuff in our spare time, give back to projects which need support, and create a community which is inclusive and engaging.
@@ -14,12 +15,15 @@ Find out more about Code52 on their website http://code52.org/
 1. Create a Language resource file
 :::::::::::::::::::::::::::::::
 
-    Add a new item > Resources File. (If resources file isn't visible try changing the selection on the left hand side to the root (such as Visual C#)
-    I usually create a resource file specifically for language resources
+	Applications need to have at least one resource (resx) file to tracks the base text and translations.
 
-    Ensure that strings is the current section selection.
+    To add a resource file, right-click in a folder and select "Add | New Item". 
+	In the dialog box, select General from the left-hand menu and then "Resources File".
+	
+	Ensure that "Strings" is selected in the top-left combo box. This will give you a list of name-value pairs 
+	which you can edit and create - these will be accessible from code.
 
-    If your resource file is in a separate project you may wish to change the access modifier to public so you can access it from other projects.
+    If your resource file should be visible to other projects, set the "Access Modifier" value to "Public".
 
 :::::::::::::::::::::::::::::::
 2. Add reference to language selection UserControl
