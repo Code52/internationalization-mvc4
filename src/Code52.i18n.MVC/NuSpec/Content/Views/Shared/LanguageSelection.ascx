@@ -1,4 +1,5 @@
-﻿<div id="placeholder-regions">
+﻿﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
+<div id="placeholder-regions">
 </div>
 <div id="i18n-options-container">
     <div id="i18n-options">

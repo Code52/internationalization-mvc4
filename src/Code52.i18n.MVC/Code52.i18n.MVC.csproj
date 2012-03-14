@@ -48,6 +48,7 @@
     <None Include="NuSpec\Content\Code52.i18n\LanguageFilterAttribute.cs.pp" />
     <None Include="NuSpec\Content\Code52.i18n\LocalizationHelpers.cs.pp" />
     <None Include="NuSpec\Content\Controllers\LanguageController.cs.pp" />
+    <Content Include="NuSpec\Content\Views\Shared\LanguageSelection.ascx" />
     <None Include="NuSpec\Content\web.config.transform">
       <SubType>Designer</SubType>
     </None>
@@ -55,7 +56,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="NuSpec\Content\App_Readme\Code52.i18n.MVC.readme.txt" />
+    <None Include="NuSpec\Content\App_Readme\Code52.i18n.MVC.readme.txt.pp" />
     <Content Include="NuSpec\Content\Content\code52.i18n\Code52.i18n.css" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\bg_regions_international_tile.png" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\de.png" />
@@ -73,7 +74,6 @@
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

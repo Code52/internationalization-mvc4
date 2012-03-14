@@ -42,8 +42,6 @@ Find out more about Code52 on their website http://code52.org/
 	
 	@using $rootnamespace$.Code52.i18n
 
-	where $rootnamespace$ is the name of your application.
-
 
 	Before the closing </head> tag reference a stylesheet to for the language selection page:
 

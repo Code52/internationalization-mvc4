@@ -67,7 +67,6 @@
     <None Include="NuSpec\Content\Views\Home\About.cshtml" />
     <None Include="NuSpec\Content\Views\Home\Contact.cshtml" />
     <None Include="NuSpec\Content\Views\Home\Index.cshtml" />
-    <None Include="NuSpec\Content\Views\Shared\LanguageSelection.cshtml" />
     <None Include="NuSpec\Content\Views\Shared\_LoginPartial.cshtml" />
     <None Include="NuSpec\tools\install.ps1" />
   </ItemGroup>
