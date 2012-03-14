@@ -13,31 +13,11 @@
             <dependency id="WebActivator" version="1.5" />
         </dependencies>
         <id>Code52.i18n.MVC3</id>
-        <title>ASP.NET Internationalisation (i18n) package for MVC3</title>
+        <title>ASP.NET Internationalisation (i18n) for MVC3</title>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A core package to create an internationalization-ready web application</description>
         <summary />
         <releaseNotes>Initial release</releaseNotes>
         <tags>localization globalization MVC MVC3 ASP.NET Web i18n l10n</tags>
     </metadata>
-    <files>
-        <file src="Content\App_Readme\Code52.i18n.MVC.readme.txt" target="Content\App_Readme\Code52.i18n.MVC.readme.txt" />
-        <file src="Content\App_Start\AppStart_Code52_i18n.cs.pp" target="Content\App_Start\AppStart_Code52_i18n.cs.pp" />
-        <file src="..\..\Code52.i18n\NuSpec\Content\Code52.i18n\CultureHelper.cs.pp" target="Content\Code52.i18n\CultureHelper.cs.pp" />
-        <file src="Content\Code52.i18n\LanguageFilterAttribute.cs.pp" target="Content\Code52.i18n\LanguageFilterAttribute.cs.pp" />
-        <file src="Content\Code52.i18n\LocalizationHelpers.cs.pp" target="Content\Code52.i18n\LocalizationHelpers.cs.pp" />
-        <file src="Content\Content\code52.i18n\images\flags\de.png" target="Content\Content\code52.i18n\images\flags\de.png" />
-        <file src="Content\Content\code52.i18n\images\flags\es.png" target="Content\Content\code52.i18n\images\flags\es.png" />
-        <file src="Content\Content\code52.i18n\images\flags\fr.png" target="Content\Content\code52.i18n\images\flags\fr.png" />
-        <file src="Content\Content\code52.i18n\images\flags\gb.png" target="Content\Content\code52.i18n\images\flags\gb.png" />
-        <file src="Content\Content\code52.i18n\images\flags\it.png" target="Content\Content\code52.i18n\images\flags\it.png" />
-        <file src="Content\Content\code52.i18n\images\bg_regions_international_tile.png" target="Content\Content\code52.i18n\images\bg_regions_international_tile.png" />
-        <file src="Content\Content\code52.i18n\images\icon_international_map.png" target="Content\Content\code52.i18n\images\icon_international_map.png" />
-        <file src="Content\Content\code52.i18n\images\WorldHeader.png" target="Content\Content\code52.i18n\images\WorldHeader.png" />
-        <file src="Content\Content\code52.i18n\Code52.i18n.css" target="Content\Content\code52.i18n\Code52.i18n.css" />
-        <file src="Content\Controllers\LanguageController.cs.pp" target="Content\Controllers\LanguageController.cs.pp" />
-        <file src="..\..\Code52.i18n\NuSpec\Content\Scripts\Code52.i18n.js" target="Content\Scripts\Code52.i18n.js" />
-        <file src="..\..\Code52.i18n\NuSpec\Content\web.config.transform" target="Content\web.config.transform" />
-        <file src="tools\install.ps1" target="tools\install.ps1" />
-    </files>
 </package>

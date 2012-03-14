@@ -44,14 +44,19 @@
     <None Include="NuSpec\Code52.i18n.MVC4.nuspec" />
     <None Include="NuSpec\Content\App_Start\AppStart_Code52_i18n.cs.pp" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="NuSpec\Content\Code52.i18n\CultureHelper.cs.pp" />
     <None Include="NuSpec\Content\Code52.i18n\LanguageFilterAttribute.cs.pp" />
     <None Include="NuSpec\Content\Code52.i18n\LocalizationHelpers.cs.pp" />
     <None Include="NuSpec\Content\Controllers\LanguageController.cs.pp" />
+    <Content Include="NuSpec\Content\Views\Shared\LanguageSelection.ascx" />
+    <None Include="NuSpec\Content\web.config.transform">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="NuSpec\tools\install.ps1" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="NuSpec\Content\App_Readme\Code52.i18n.MVC.readme.txt" />
+    <None Include="NuSpec\Content\App_Readme\Code52.i18n.MVC.readme.txt.pp" />
     <Content Include="NuSpec\Content\Content\code52.i18n\Code52.i18n.css" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\bg_regions_international_tile.png" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\de.png" />
@@ -61,13 +66,14 @@
     <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\it.png" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\icon_international_map.png" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\WorldHeader.png" />
-    <Content Include="NuSpec\Content\Views\Shared\LanguageSelection.ascx" />
+    <Content Include="NuSpec\Content\Scripts\Code52.i18n.js" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NuSpec\Code52.i18n.MVC3.nuspec" />
+    <None Include="NuSpec\Code52.i18n.MVC3.nuspec">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

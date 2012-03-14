@@ -1,9 +1,7 @@
 @{
     ViewBag.Title = "Home Page";
 }
-
-@section featured {
-    <section class="featured">
+<section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
                 <h1>@ViewBag.Title.</h1>
@@ -14,15 +12,14 @@
             </p>
         </div>
     </section>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#testButton').click(
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#testButton').click(
                function () {
                    alert(Code52.Language.Dictionary.Demonstration_Alert);
                    return false;
                }
             );
-        });        
+    });        
 
-    </script>
-}
+</script>

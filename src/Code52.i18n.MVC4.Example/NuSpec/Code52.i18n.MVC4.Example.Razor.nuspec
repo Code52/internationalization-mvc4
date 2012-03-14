@@ -3,7 +3,7 @@
     <metadata>
         <id>Code52.i18n.MVC4.Sample.Razor</id>
         <version>0.1</version>
-        <title>ASP.NET Internationalisation (i18n) MVC4 sample</title>
+        <title>ASP.NET Internationalisation (i18n) Sample for MVC4 </title>
         <authors>bforster, dchristiansen</authors>
         <owners>bforster, dchristiansen</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
