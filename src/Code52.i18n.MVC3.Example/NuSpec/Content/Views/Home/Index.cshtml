@@ -1,28 +1,22 @@
 @{
     ViewBag.Title = "Home Page";
 }
+<h2>@ViewBag.Message</h2>
+<p>
+    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+</p>
 
-@section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>@ViewBag.Title.</h1>
-                <h2>@ViewBag.Message</h2>
-            </hgroup>
-            <p>
-                <button id="testButton">Click me</button> to demonstrate retrieving language resource via JS.
-            </p>
-        </div>
-    </section>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#testButton').click(
-               function () {
-                   alert(Code52.Language.Dictionary.Demonstration_Alert);
-                   return false;
-               }
-            );
-        });        
+<p>
+    <button id="testButton">Click me</button> to demonstrate retrieving language resource via JS.
+</p>
 
-    </script>
-}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#testButton').click(
+            function () {
+                alert(Code52.Language.Dictionary.Demonstration_Alert);
+                return false;
+            }
+        );
+    });        
+</script>

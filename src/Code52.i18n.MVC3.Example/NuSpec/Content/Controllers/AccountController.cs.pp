@@ -1,4 +1,5 @@
-﻿namespace $rootnamespace$.Controllers {
+﻿namespace $rootnamespace$.Controllers 
+{
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -7,7 +8,7 @@
 
     using $rootnamespace$.Models.Accounts;
 
-    public class AccountController : BaseController {
+    public class AccountController : Controller {
 	
         //
         // GET: /Account/Login
